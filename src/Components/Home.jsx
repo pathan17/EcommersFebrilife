@@ -7,8 +7,18 @@ import { FaSearch } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import Img from "../assets/fairlifeImg.svg";
 import banner from "../assets/img1.jpg";
+import { Link } from "react-router-dom";
+import HomeFullSleev from "./HomeFullSleev";
+import NewArriVal from "./NewArriVal";
+import DesignerEdition from "./DesignerEdition";
+import ShopMenWomenKids from "./ShopMenWomenKids";
 
 function App() {
+
+
+ 
+ 
+
   return (
     <>
       {/* febrilifeHedline Start */}
@@ -64,13 +74,223 @@ function App() {
                 <h2 className="flex justify-center items-center gap-2 text-black text-lg">
                   Shop <IoIosArrowDown />
                 </h2>
-                <div className="menu bg-white  p-6 absolute hidden group-hover:block ">
-                  <ul className="flex flex-col">
-                    <li className="text-black py-2">Home</li>
-                    <li className="text-black py-2">Products</li>
-                    <li className="text-black py-2">Services</li>
-                    <li className="text-black py-2">Contact</li>
-                  </ul>
+                <div className="menu bg-white  p-6 absolute hidden group-hover:block w-[890px]">
+                  <div className="div flex flex-row h-[310px] gap-10">
+                    <ul className="flex flex-col">
+                      <li className="text-black font-bold">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens">
+                          Mens
+                        </Link>
+                      </li>
+                      <li className="text-black ">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Printed">
+                          T-shart
+                        </Link>
+                      </li>
+                      <li className="text-black ">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%☻20Panjabi">
+                          T-sart(Raglan)
+                        </Link>
+                      </li>
+                      <li className="text-black ">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Cut%20%26%20Stitch%20%28Designer%20Edition%29&refinementList%5Bcats%5D%5B1%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Cut%20%26%20Stitch">
+                          T-sart(Cut & Stitch)
+                        </Link>
+                      </li>
+                      <li className="text-black">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Sports">
+                          T-sart(sports&Edition)
+                        </Link>
+                      </li>
+                      <li className="text-black">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Blank">
+                          T-shirt(Blanks)
+                        </Link>
+                      </li>
+                      <li className="text-black">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt">
+                          Full Sleev T-shirt
+                        </Link>
+                      </li>
+                      <li className="text-black">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Raglan&refinementList%5Bcats%5D%5B1%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Raglan%20%28Designer%20Edition%29">
+                          Full Sleev (RagLan)
+                        </Link>
+                      </li>
+                      <li className="text-black">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Cut%20%26%20Stitch%20%28Designer%20Edition%29&refinementList%5Bcats%5D%5B1%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Cut%20%26%20Stitch">
+                          Full Sleeve (Cut&Stitch)
+                        </Link>
+                      </li>
+                      <li className="text-black">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Blank">
+                          Full Sleeve (Blanks)
+                        </Link>
+                      </li>
+                      <li className="text-black ">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Accesorries%20%3E%20Wallet">
+                          Wallet
+                        </Link>
+                      </li>
+                      <li className="text-black">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Accesorries%20%3E%20Belt">
+                          Belt
+                        </Link>
+                      </li>
+                    </ul>
+                    <ul className="">
+                      <li className="text-black  font-bold text-lg">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Womens">
+                          Womens
+                        </Link>
+                      </li>
+                      <li className="text-black ">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Womens%20%3E%20Kurti%20Tunic%20And%20Tops">
+                          Kurti, Tunic&Tops
+                        </Link>
+                      </li>
+                      <li className="text-black">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Womens%20%3E%20T-Shirt">
+                          T-Shirt
+                        </Link>
+                      </li>
+                      <li className="text-black">
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Womens%20%3E%20Comfy%20Trouser">
+                          Comfy Trouser
+                        </Link>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li className="text-black font-bold text-lg">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids">
+                          Kids
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black ">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Printed">
+                          T-shirt
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Maggie">
+                          Maggie
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Blank">
+                          Plain T-shirt
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Full%20Sleeve%20T-shirt">
+                          Full Sleeve T-shirt
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Polo%20T-shirt">
+                          Polo T-shirt
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Shorts">
+                          Shorts
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Trouser">
+                          Trouser
+                        </Link>{" "}
+                      </li>
+                    </ul>
+                    <ul>
+                      <li className="text-black font-bold text-lg">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask">
+                          Face Mask
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black ">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Professional%207%20Layer%20Mask">
+                          Professional 7 Layer Mask
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Sports%20Edition">
+                          Sports Edition
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black ">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Womens%20Designer%20Edition">
+                          Womens Designer Edition
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Womens%20Embroidery%20Edition">
+                          Womens Embroidery Edition
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Kids%20Mask">
+                          Kids Face Mask
+                        </Link>{" "}
+                      </li>
+                    </ul>
+                    <ul>
+                      <li className="text-black font-bold text-lg">
+                        {" "}
+                        <Link to="">Sports</Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Sports%20%3E%20Football%20Jersey">
+                          Football Jersey
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Sports%20%3E%20Sports%20T-shirt&refinementList%5Bcats%5D%5B1%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Sports">
+                          Sports T-shirt
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Maggie">
+                          Maggie (Single Jersey)
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Shorts">
+                          Shorts
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Underwear">
+                          Underware
+                        </Link>{" "}
+                      </li>
+                      <li className="text-black">
+                        {" "}
+                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Socks">
+                          Socks
+                        </Link>{" "}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -103,6 +323,23 @@ function App() {
           <img src={banner} alt="" />
         </div>
       </div>
+      {/* banner End */}
+
+      {/* Shop Now Men Women Kids  Start*/}
+        <ShopMenWomenKids></ShopMenWomenKids>
+      {/* Shop Now Men Women Kids  End*/}
+
+      {/* NEEW----ARRIVAL----START*/}
+        <NewArriVal></NewArriVal>
+      {/* NEEW----ARRIVAL----END*/}
+
+      {/* Img----Designer Edition----START*/}
+       <DesignerEdition></DesignerEdition>
+      {/* Img----Designer Edition----END*/}
+      <HomeFullSleev></HomeFullSleev>
+
+      
+      
     </>
   );
 }
