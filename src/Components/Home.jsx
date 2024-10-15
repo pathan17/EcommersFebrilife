@@ -12,6 +12,14 @@ import HomeFullSleev from "./HomeFullSleev";
 import NewArriVal from "./NewArriVal";
 import DesignerEdition from "./DesignerEdition";
 import ShopMenWomenKids from "./ShopMenWomenKids";
+import FabriLife from "./FabriLife";
+import MensJacket from "./MensJacket";
+import SingleJersey from "./SingleJersey";
+import MenShort from "./MensShort"
+import SportsTrousers from "./SportsTrousers";
+import SportsTshirt from "./SportsTshirt";
+import FaceMask from "./FaceMask";
+import Premium from "./Premium";
 
 function App() {
 
@@ -25,8 +33,8 @@ function App() {
       <div className="main h-8 bg-black bg-opacity-10 w-full">
         <div className="febrilifeHedline flex justify-center items-center">
           <div className="T-shart w-[40%]">
-            <span className=" bg-black h-8 w-[450px] text-white text-center py-2 font-bold flex items-center justify-center">
-              <BsLightningChargeFill className="mr-2 text-xl text-yellow-500" />
+            <span className=" bg-black h-8 w-[450px] sm:w-[240px] text-white text-center py-2 font-bold flex items-center justify-center">
+              <BsLightningChargeFill className="mr-2 text-xl  text-yellow-500" />
               EXCLUSIVE T-SHIRTS ON SALE | Limited time only
               <MdOutlineArrowCircleRight className="ml-2 text-xl bg-white rounded-full text-black" />
             </span>
@@ -35,23 +43,23 @@ function App() {
             <div className="main-btn">
               <div className="btn flex gap-8 justify-center items-center">
                 {/* Order Bulk Button */}
-                <p className="bg-green-600 hover:bg-green-700 text-white h-8 w-[200px] text-center rounded-sm flex items-center justify-center gap-1">
+                <p className="bg-green-600 hover:bg-green-700 text-white h-8 w-[200px] sm:w-[100px] text-center rounded-sm flex items-center justify-center gap-1">
                   <TfiCar className="text-lg" />
                   Order Bulk
                 </p>
                 {/* Bangladesh Dropdown Button */}
-                <p className="bg-black bg-opacity-15  hover:bg-green-700 text-white h-8 w-[200px] flex items-center justify-center gap-1  rounded-sm transition-all">
-                  <span className=" text-lg ">Bangladesh</span>
+                <p className="bg-black bg-opacity-15  hover:bg-green-700 text-white h-8 w-[200px] sm:w-[100px] flex items-center justify-center gap-1  rounded-sm transition-all">
+                  <span className=" text-lg  ">Bangladesh</span>
                   <IoIosArrowDown className="text-lg" />
                 </p>
-                <span className="flex items-center justify-center text-center gap-10 ml-5">
+                <span className="flex items-center justify-center text-center gap-10 ml-5 sm:gap-5">
                   {/* Help Link */}
                   <p className="text-gray-600 hover:text-blue-500 cursor-pointer transition duration-300">
                     Help
                   </p>
 
                   {/* Login Button */}
-                  <h4 className="flex justify-center items-center  gap-1 text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
+                  <h4 className="flex justify-center items-center  gap-1 sm:mr-4 text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
                     <CgLogIn />
                     Login
                   </h4>
@@ -68,10 +76,10 @@ function App() {
       <nav className="container mt-10">
         <div className="main flex justify-center items-center">
           <div className="logo w-[30%]">
-            <div className="log  w-[200px] flex gap-16">
+            <div className="log  w-[200px] flex gap-16 sm:gap-2">
               <img src={Img} alt="Logo" className="w-full" />
               <div className="relative group">
-                <h2 className="flex justify-center items-center gap-2 text-black text-lg">
+                <h2 className="flex justify-center items-center gap-2  text-black text-lg">
                   Shop <IoIosArrowDown />
                 </h2>
                 <div className="menu bg-white  p-6 absolute hidden group-hover:block w-[890px]">
@@ -297,7 +305,7 @@ function App() {
           </div>
           <div className="input w-[60%]">
             <div className="input-field flex justify-center items-center">
-              <div className="relative w-[600px]">
+              <div className="relative w-[600px] sm:w-[200px] lg:w-[600px]">
                 <input
                   type="text"
                   className="py-1 px-4 text-blue-600  border border-gray-300 focus:outline-none focus:border-blue-500 text-left w-full rounded-md"
@@ -326,20 +334,55 @@ function App() {
       {/* banner End */}
 
       {/* Shop Now Men Women Kids  Start*/}
-        <ShopMenWomenKids></ShopMenWomenKids>
+        <ShopMenWomenKids/>  
       {/* Shop Now Men Women Kids  End*/}
 
       {/* NEEW----ARRIVAL----START*/}
-        <NewArriVal></NewArriVal>
+        <NewArriVal/> 
       {/* NEEW----ARRIVAL----END*/}
 
       {/* Img----Designer Edition----START*/}
-       <DesignerEdition></DesignerEdition>
+       <DesignerEdition/> 
       {/* Img----Designer Edition----END*/}
-      <HomeFullSleev></HomeFullSleev>
+
+      {/* Img----HomeFullSleev--T-Shart---start*/}
+      <HomeFullSleev/>
+      {/* Img----HomeFullSleev--T-Shart--End-*/}
+
+      {/* ---FabriLife--text--Img----start*/}
+      <FabriLife/>
+      {/* ---FabriLife--text--Img----End*/}
+
+      {/* ---Mens---jacket--Img----start*/}
+      <MensJacket/>
+      {/* ---Mens---jacket--Img----End*/}
+
+      {/* ---Single---jersey--Img----Start*/}
+        <SingleJersey/>
+      {/* ---Single---jersey--Img----End*/}
+
+      {/* ---Mens---Short--Img----Start*/}
+         <MenShort/>
+      {/* ---Mens---Short--Img----End*/}
+
+      {/* -Shorts----Trousers---Img----START*/}
+      <SportsTrousers/>
+      {/* -Shorts----Trousers---Img----End*/}
+
+      {/* -Shorts----T--Shirt---Img----Start*/}
+      <SportsTshirt/>
+      {/* -Shorts----T--Shirt---Img----End*/}
+
+      {/* -Face----Mask---image---start*/}
+      <FaceMask/>
+      {/* -Face----Mask---image---End*/}
+       
+       {/* -----Premium -----start-*/}
+       <Premium/>
+       {/* -----Premium -----End-*/}
 
       
-      
+    
     </>
   );
 }
