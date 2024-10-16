@@ -1,20 +1,49 @@
 import { FaSearch } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import Img from "../assets/fairlifeImg.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
-
-
-
-
+import { FaBars } from "react-icons/fa";
+import { VscChromeClose } from "react-icons/vsc";
+import { useState } from "react";
 
 const Navbar = () => {
-    return (
-        <div>
-             <nav className="container mt-10">
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+ 
+
+
+  const navLinks = [
+    { path: "/", name: <h1>Categories</h1> },
+    { path: "/", name: <h1>Mens</h1> },
+    { path: "/latest-news", name: <h1>Womens</h1> },
+    { path: "/national", name: <h1>Kids</h1> },
+    { path: "/country", name: <h1>Face Mask</h1> },
+    { path: "/politics", name: <h1>Football Jersey</h1> },
+   
+   
+  ];
+
+  return (
+    <div>
+      <nav className="container mt-10">
         <div className="main flex container mx-auto lg:max-w-[1120px]">
           <div className="logo w-[30%]">
             <div className="log  w-[180px] flex gap-[70px] ">
+              <div className="icon">
+                {sidebarOpen ? (
+
+                  <VscChromeClose
+                    onClick={() => setSidebarOpen(!sidebarOpen)}
+                    className="text-4xl text-black font-bold cursor-pointer w-6 h-6"
+                  />
+                 
+                ) : (
+                  <FaBars
+                    onClick={() => setSidebarOpen(!sidebarOpen)}
+                    className=" text-[30px]"
+                  />
+                )}
+              </div>
               <img src={Img} alt="Logo" className="w-full" />
               <div className="relative group">
                 <h2 className="flex justify-center items-center gap-2  text-black text-lg mt-0">
@@ -260,9 +289,41 @@ const Navbar = () => {
             </h3>
           </div>
         </div>
-      </nav>
+         {/* Sidebar */}
+        {sidebarOpen && (
+        <div
+          className={` z-auto fixed top-0 left-0 h-full w-64 bg-white text-red-600 p-4 transition-transform duration-300 ${
+            sidebarOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          {/* Close Button with Background */}
+          <div className="flex justify-end">
+            <VscChromeClose
+              onClick={() => setSidebarOpen(false)}
+              className="bg-white text-black text-3xl cursor-pointer p-1 rounded-full"
+            />
+          </div>
+
+          {/* Sidebar Content */}
+
+          <ul className=" mt-4">
+            {navLinks.map((link, index) => (
+              <li key={index} className="py-2 w-full">
+                <NavLink
+                  to={link.path}
+                  className=" p-2 w-full block text-black transition-colors duration-300 rounded-md"
+                  activeClassName=""
+                >
+                  {link.name}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </div>
-    );
+            )}
+      </nav>
+    </div>
+  );
 };
 
 export default Navbar;
