@@ -4,47 +4,47 @@ import { TfiCar } from "react-icons/tfi";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgLogIn } from "react-icons/cg";
 // import { useState } from "react";
-import { Link } from "react-router-dom";
-import LoginPage from "./LoginPage";
+
+
 
 const HadLine = () => {
 
     // const [LoginOpen, setLoginOpen] = useState('');
     return (
         <div>
-              <div className="main h-8 bg-black bg-opacity-10 w-full">
-        <div className="febrilifeHedline flex justify-center items-center lg:flex lg:justify-center lg:items-center sm:flex sm:justify-center sm:items-center sm:gap-[60px]">
-          <div className="T-shart w-[40%] sm:w-[60%] lg:w-[40%]">
-            <span className=" bg-black h-8 w-[450px] lg:w-[500px] lg:h-8 sm:w-[300px] sm:text-[10px] lg:text-lg   text-white text-center py-2 font-bold flex items-center justify-center">
-              <BsLightningChargeFill className="mr-2 text-xl lg:text-xl sm:text-[20px]  text-yellow-500" />
+              <div className="main h-8 bg-black bg-opacity-10 w-full hidden  lg:block">
+        <div className="febrilifeHedline flex justify-center items-center   ">
+          <div className="T-shart w-[40%]  ">
+            <span className=" bg-black h-8 w-[450px]     text-white text-center py-2 font-bold flex items-center justify-center">
+              <BsLightningChargeFill className="mr-2 text-xl   text-yellow-500" />
               EXCLUSIVE T-SHIRTS ON SALE | Limited time only
-              <MdOutlineArrowCircleRight className="ml-2 text-xl lg:text-lg sm:text-[15px] bg-white rounded-full text-black" />
+              <MdOutlineArrowCircleRight className="ml-2 text-xl  bg-white rounded-full text-black" />
             </span>
           </div>
-          <div className="btn w-[60%] sm:w-[40%] lg:w-full">
+          <div className="btn w-[60%] ">
             <div className="main-btn"> 
-              <div className="btn flex gap-8  sm:flex sm:gap-2 lg:flex lg:gap-4 justify-center items-center ">
+              <div className="btn flex gap-8    justify-center items-center ">
                 {/* Order Bulk Button */}
-                <p className="bg-green-600 hover:bg-green-700 sm:text-[8px] lg:text-[18px] text-white h-8 lg:h-8 sm:h-6 sm:p-4 w-[200px] text-center rounded-sm flex items-center justify-center gap-1">
-                  <TfiCar className="text-lg sm:text-[10px] lg:text-lg" />
+                <p className="bg-green-600 hover:bg-green-700   text-white h-8   w-[200px] text-center rounded-sm flex items-center justify-center gap-1">
+                  <TfiCar className="text-lg  " />
                   Order Bulk
                 </p>
                 {/* Bangladesh Dropdown Button */}
-                <p className="bg-black bg-opacity-15  hover:bg-green-700 text-white h-8 lg:gap-1 sm:h-6 sm:p-4 sm:gap-0 w-[200px] sm:flex  sm:text-[8px] flex items-center justify-center gap-1  rounded-sm transition-all">
-                  <span className=" text-lg lg:text-lg sm:text-[8px] ">Bangladesh</span>
-                  <IoIosArrowDown className="text-lg lg:text-lg sm:text-[8px]" />
+                <p className="bg-black bg-opacity-15  hover:bg-green-700 text-white h-8   w-[200px]    flex items-center justify-center gap-1  rounded-sm transition-all">
+                  <span className=" text-lg  ">Bangladesh</span>
+                  <IoIosArrowDown className="text-lg  " />
                 </p>
-                <div className="div lg:ml-[90px]">
-                <span className="flex items-center gap-[80px] lg:gap-[50px] sm:mr-1 sm:flex sm:gap-[10px] text-center sm:ml-2 ml-5 lg:mr-3  ">
+                <div className="div ">
+                <span className="flex items-center gap-[80px]   text-center  ml-5   ">
                   {/* Help Link */}
-                  <p className="text-gray-600 lg:text-lg  sm:text-[10px] hover:text-blue-500 cursor-pointer transition duration-300">
+                  <p className="text-gray-600   hover:text-blue-500 cursor-pointer transition duration-300">
                     Help
                   </p>
 
                   {/* Login Button */}
-                  <h4 className="flex justify-center items-center sm:text-[10px] lg:text-lg lg:gap-1   gap-1  text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
+                  <h4 className="flex justify-center items-center    gap-1  text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
                     <CgLogIn  />
-                    <Link to={<LoginPage></LoginPage>}>Login</Link>
+                    Login
                   </h4>
                 </span>
                 </div>
