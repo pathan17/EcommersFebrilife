@@ -3,13 +3,15 @@ import { MdOutlineArrowCircleRight } from "react-icons/md";
 import { TfiCar } from "react-icons/tfi";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgLogIn } from "react-icons/cg";
+import { Link } from "react-router-dom";
 // import { useState } from "react";
 
 
 
 const HadLine = () => {
-
-    // const [LoginOpen, setLoginOpen] = useState('');
+   
+  
+   
     return (
         <div>
               <div className="main h-8 bg-black bg-opacity-10 w-full hidden  lg:block">
@@ -44,7 +46,7 @@ const HadLine = () => {
                   {/* Login Button */}
                   <h4 className="flex justify-center items-center    gap-1  text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
                     <CgLogIn  />
-                    Login
+                    {/* <Link> Login</Link> */}
                   </h4>
                 </span>
                 </div>

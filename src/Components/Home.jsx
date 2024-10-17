@@ -17,6 +17,7 @@ import Navbar from "./Navbar";
 import Banner from "./Banner";
 import HadLine from "./HadLine";
 import LoginPage from "./LoginPage";
+import Footer from "./Footer";
 
 function App() {
 
@@ -95,6 +96,10 @@ function App() {
         {/* -----Bluk-- Order---End*/}
 
         <LoginPage/>
+
+         {/* -----FOOTER----START*/}
+         <Footer/> 
+         {/* -----FOOTER----END*/}
         
 
         

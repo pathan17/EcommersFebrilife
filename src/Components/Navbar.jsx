@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="container mt-10">
+      <nav className=" bg-white fixed p-7 w-full">
         <div className="main flex container mx-auto lg:max-w-[1120px]">
           <div className="logo w-[30%]">
             <div className="log  w-[180px] flex gap-[70px] ">
