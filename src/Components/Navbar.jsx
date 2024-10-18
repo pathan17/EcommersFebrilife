@@ -272,7 +272,7 @@ const Navbar = () => {
           </div>
           <div className="input w-[60%]">
             <div className="input-field flex justify-center  items-center">
-              <div className="relative w-[500px]  ">
+              <div className="relative w-[500px] hidden lg:block  ">
                 <input
                   type="text"
                   className="py-1 px-4 text-blue-600  border border-gray-300 focus:outline-none focus:border-blue-500 text-left w-full"

@@ -3,7 +3,7 @@ import { MdOutlineArrowCircleRight } from "react-icons/md";
 import { TfiCar } from "react-icons/tfi";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgLogIn } from "react-icons/cg";
-import { Link } from "react-router-dom";
+
 // import { useState } from "react";
 
 
