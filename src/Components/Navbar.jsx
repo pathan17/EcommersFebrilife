@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className=" bg-white fixed p-7 w-full sm:top-0 lg:top-0 z-[999]">
+      <nav className=" bg-white fixed p-6 w-full top-0 sm:top-0 lg:top-0 z-[999]">
         <div className="main flex container mx-auto lg:max-w-[1120px]">
           <div className="logo w-[30%]">
             <div className="log  w-[180px] flex gap-[70px] ">
@@ -282,7 +282,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="icon flex gap-1 ml-[20px]">
+          <div className="icon  gap-1 ml-[20px] hidden lg:block">
             <FaCartShopping className=" text-[23px]" />
             <h3 className=" bg-blue-600 rounded-md h-4 w-4  flex items-center justify-center mt-2 text-white text-[10px] font-bold">
               0

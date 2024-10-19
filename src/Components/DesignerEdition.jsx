@@ -9,7 +9,7 @@ const DesignerEdition = () => {
     
     return (
         <div>
-            <div className="container mx-auto lg:max-w-[1120px]">
+            <div className="container p-3 mx-auto lg:max-w-[1120px]">
                 <div className="flex flex-wrap gap-[55px] mt-2 justify-center">
                     {
                         designerImg.map((item, i) => (

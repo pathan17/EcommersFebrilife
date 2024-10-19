@@ -26,7 +26,7 @@ const DesignerEdition = () => {
        ]
     return (
         <div>
-            <div className="container mx-auto lg:max-w-[1120px]">
+            <div className="container p-6 mx-auto lg:max-w-[1120px]">
           <div className="">
             <div className="items flex flex-wrap gap-[22px]  mt-[40px]  justify-center  ">
                    {
