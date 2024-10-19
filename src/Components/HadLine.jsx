@@ -14,37 +14,36 @@ const HadLine = () => {
    
     return (
         <div>
-              <div className="main h-8 bg-black bg-opacity-10 w-full hidden  lg:block">
-        <div className="febrilifeHedline flex justify-center items-center   ">
-          <div className="T-shart w-[40%]  ">
-            <span className=" bg-black h-8 w-[450px]     text-white text-center py-2 font-bold flex items-center justify-center">
+          <div className="main h-8 bg-black bg-opacity-10 w-full hidden lg:block">
+        <div className="febrilifeHedline flex justify-center items-center">
+          <div className="T-shart w-[40%]">
+            <span className=" bg-black h-8 w-[450px] text-white text-center py-2 font-bold flex items-center justify-center">
               <BsLightningChargeFill className="mr-2 text-xl   text-yellow-500" />
               EXCLUSIVE T-SHIRTS ON SALE | Limited time only
-              <MdOutlineArrowCircleRight className="ml-2 text-xl  bg-white rounded-full text-black" />
+              <MdOutlineArrowCircleRight className="ml-2 text-xl bg-white rounded-full text-black" />
             </span>
           </div>
           <div className="btn w-[60%] ">
             <div className="main-btn"> 
-              <div className="btn flex gap-8    justify-center items-center ">
+              <div className="btn flex gap-8 justify-center items-center">
                 {/* Order Bulk Button */}
-                <p className="bg-green-600 hover:bg-green-700   text-white h-8   w-[200px] text-center rounded-sm flex items-center justify-center gap-1">
+                <p className="bg-green-600 hover:bg-green-700  text-white h-8   w-[200px] text-center rounded-sm flex items-center justify-center gap-1">
                   <TfiCar className="text-lg  " />
                   Order Bulk
                 </p>
                 {/* Bangladesh Dropdown Button */}
                 <p className="bg-black bg-opacity-15  hover:bg-green-700 text-white h-8   w-[200px]    flex items-center justify-center gap-1  rounded-sm transition-all">
                   <span className=" text-lg  ">Bangladesh</span>
-                  <IoIosArrowDown className="text-lg  " />
+                  <IoIosArrowDown className="text-lg" />
                 </p>
-                <div className="div ">
-                <span className="flex items-center gap-[80px]   text-center  ml-5   ">
+                <div className="div">
+                <span className="flex items-center gap-[80px] text-center ml-5">
                   {/* Help Link */}
-                  <p className="text-gray-600   hover:text-blue-500 cursor-pointer transition duration-300">
+                  <p className="text-gray-600 hover:text-blue-500 cursor-pointer transition duration-300">
                     Help
                   </p>
-
                   {/* Login Button */}
-                  <h4 className="flex justify-center items-center    gap-1  text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
+                  <h4 className="flex justify-center items-center gap-1 text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
                     <CgLogIn  />
                     {/* <Link> Login</Link> */}
                   </h4>

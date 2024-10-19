@@ -40,21 +40,22 @@ const HomeFullSleev = () => {
   ];
   return (
     <div>
-      <div className="container mx-auto mb-5  mt-5 lg:max-w-[1120px]">
+      <div className=" mb-5 mt-5 container mx-auto lg:max-w-[1120px]">
         <div className=" flex  gap-5 ">
           {FullSleev.map((item, i) => (
-            <div key={i} className="item w-[30%]">
-              <div className="img ">
-                <img src={item.IMG} alt="img" className=" rounded-md h-[378px] " />
+            <div key={i} className="item w-[30%] sm:mx-auto sm:hidden lg:block">
+              <div className="img w-[100%] ">
+                <img src={item.IMG} alt="img" className=" rounded-md h-[360px] sm:h-[255px] sm:w-[100%] md:h-[340px]  lg:h-[360px] " />
               </div>
             </div>
           ))}
           
-            <div className="w-[70%] flex flex-wrap gap-[15px]">
+            <div className="w-[70%] flex flex-wrap gap-[15px] sm:flex-wrap sm:mx-auto ">
                 {
                     FullSleevImg.map((item,i)=>(
-                        <div key={i} className="w-[23.5%]">
-                            <img src={item.IMG1} alt="" />
+                        <div key={i} className="w-[22.4%] sm:w-[47%] lg:w-[22.4%]">
+                        
+                            <img src={item.IMG1} alt="" className="md:w-[100%] "/>
                         </div>
                     ))
                 }
