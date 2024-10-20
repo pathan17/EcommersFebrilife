@@ -37,7 +37,7 @@ const HomeFullSleev = () => {
 
   return (
     <div>
-      <div className="mb-5 p-8 mt-5 container mx-auto lg:max-w-[1120px]">
+      <div className="mb-5 p-5 mt-5 container mx-auto lg:max-w-[1120px]">
         <div className="flex flex-col lg:flex-row gap-5">
           {FullSleev.map((item, i) => (
             <div key={i} className="item w-full lg:w-1/3 sm:hidden lg:block">

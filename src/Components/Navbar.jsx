@@ -45,7 +45,7 @@ const Navbar = () => {
                 )}
               </div>
               <img src={Img} alt="Logo" className="w-full" />
-              <div className="relative group">
+              <div className="relative hidden md:block group">
                 <h2 className="flex justify-center items-center gap-2  text-black text-lg mt-0">
                   Shop <IoIosArrowDown />
                 </h2>
