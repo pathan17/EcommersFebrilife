@@ -37,7 +37,7 @@ const MensJacket = () => {
 
   return (
     <div>
-      <div className="container p-6 mx-auto mt-[80px] lg:max-w-[1120px]">
+      <div className="container  p-6 mx-auto mt-[80px] lg:max-w-[1120px]">
         <div className="flex flex-col lg:flex-row gap-5">
           {FullSleev.map((item, i) => (
             <div key={i} className="item w-full lg:w-1/3">

@@ -54,7 +54,7 @@ const NewArriVal = () => {
 
   return (
     <div>
-      <div className="main-newArrival  p-6 mt-[130px] lg:mt-0 sm:mt-0">
+      <div className="main-newArrival  p-6 mt-[130px] lg:mt-[-20px] sm:mt-0">
         <div className="new bg-red-50 h-[100px] container mx-auto lg:max-w-[1120px]">
           <div className="flex justify-center items-center">
             <h2 className="mt-6 text-yellow-700 text-[30px] font-bold">
