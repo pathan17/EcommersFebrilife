@@ -46,7 +46,7 @@ const Antibacktriya = () => {
                 <img
                   src={item.IMG}
                   alt="img"
-                  className="rounded-md h-[378px] lg:h-[300px] w-full"
+                  className="rounded-md h-[378px] lg:h-[290px] w-full"
                 />
               </div>
             </div>

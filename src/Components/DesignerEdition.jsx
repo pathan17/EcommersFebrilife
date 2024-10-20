@@ -16,7 +16,7 @@ const DesignerEdition = () => {
                             <div 
                                 key={i} 
                                 className="item bg-white mt-[20px] rounded-md 
-                                 sm:w-[30%] md:w-[30%] lg:w-[30%] w-full"
+                                 sm:w-[30%] md:w-[30%] lg:w-[29%] w-full"
                             >
                                 <div className="img mx-auto">
                                     <img src={item.IMAGE} alt="img" className="rounded-md" />

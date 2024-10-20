@@ -27,6 +27,12 @@ const MensJacket = () => {
     {
       IMG1: JacketImg,
     },
+    {
+      IMG1: JacketImg,
+    },
+    {
+      IMG1: JacketImg,
+    },
   ];
 
   return (
@@ -43,7 +49,7 @@ const MensJacket = () => {
 
           <div className="w-full lg:w-2/3 flex flex-wrap gap-3 relative mx-auto md:flex-wrap ">
             {FullSleevImg.map((item, i) => (
-              <div key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[20%] relative mx-auto">
+              <div key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[21%] relative mx-auto">
                 <img src={item.IMG1} alt="image" className="w-full rounded-md " />
                 <div className="absolute inset-0 h-full w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
               </div>

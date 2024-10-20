@@ -42,14 +42,14 @@ const FaceMask = () => {
           {FullSleev.map((item, i) => (
             <div key={i} className="item w-full lg:w-1/3">
               <div className="img">
-                <img src={item.IMG} alt="img" className="rounded-md h-[378px] lg:h-[360px] w-full sm:h-[255px] md:h-[340px]" />
+                <img src={item.IMG} alt="img" className="rounded-md h-[378px] lg:h-[340px] w-full sm:h-[255px] md:h-[340px]" />
               </div>
             </div>
           ))}
           
           <div className="w-full lg:w-2/3 flex flex-wrap  gap-3 ">
             {FullSleevImg.map((item, i) => (
-              <div key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-1/5 mx-auto">
+              <div key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[23%] mx-auto">
                 <img src={item.IMG1} alt="" className="w-full" />
               </div>
             ))}
