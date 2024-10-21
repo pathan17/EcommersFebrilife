@@ -16,8 +16,8 @@ const ShopMenWomenKids = () => {
                               
                             </div>
                         </div>
-                        <div className="shopNow w-full lg:w-1/3 sm:mx-auto bg-slate-100 lg:bg-inherit lg:mt-0 md:w-full">
-                            <div className="Icon flex flex-col sm:flex-row gap-4 sm:gap-1  justify-center items-center">
+                        <div className="shopNow w-full lg:w-1/3 sm:mx-auto bg-slate-100 p-3 lg:p-0 lg:bg-inherit lg:mt-0 md:w-full">
+                            <div className="Icon flex flex-col sm:flex-row gap-2 sm:gap-1  justify-center items-center">
                                 <div className="text">
                                     <h1 className="">GET 5% OFF ON APP</h1>
                                 </div>
