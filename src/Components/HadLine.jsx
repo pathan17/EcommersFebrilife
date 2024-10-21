@@ -3,6 +3,7 @@ import { MdOutlineArrowCircleRight } from "react-icons/md";
 import { TfiCar } from "react-icons/tfi";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgLogIn } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 // import { useState } from "react";
 
@@ -18,7 +19,7 @@ const HadLine = () => {
         <div className="febrilifeHedline flex justify-center items-center">
           <div className="T-shart w-[40%]">
             <span className=" bg-black h-8 w-[450px] text-white text-center py-2 font-bold flex items-center justify-center">
-              <BsLightningChargeFill className="mr-2 text-xl   text-yellow-500" />
+              <BsLightningChargeFill className="mr-2 text-xltext-yellow-500" />
               EXCLUSIVE T-SHIRTS ON SALE | Limited time only
               <MdOutlineArrowCircleRight className="ml-2 text-xl bg-white rounded-full text-black" />
             </span>
@@ -45,7 +46,7 @@ const HadLine = () => {
                   {/* Login Button */}
                   <h4 className="flex justify-center items-center gap-1 text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
                     <CgLogIn  />
-                    {/* <Link> Login</Link> */}
+                    <Link to='/' > Login </Link>
                   </h4>
                 </span>
                 </div>

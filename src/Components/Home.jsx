@@ -18,7 +18,7 @@ import Banner from "./Banner";
 import HadLine from "./HadLine";
 import LoginPage from "./LoginPage";
 import Footer from "./Footer";
-import ClickFromButton from "./ClickFromButton";
+
 
 function App() {
 

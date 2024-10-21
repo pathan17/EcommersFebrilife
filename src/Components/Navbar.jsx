@@ -7,12 +7,15 @@ import { FaBars } from "react-icons/fa";
 import { VscChromeClose } from "react-icons/vsc";
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
 
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(true);
- 
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [loginVisible, setLoginVisible] = useState(false)
+
 
 
 
@@ -29,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className=" bg-white fixed p-3 lg:py-0 w-full top-0 sm:top-0 lg:top-0 z-[999]">
+      <nav className=" bg-white  p-3  w-full top-0 sm:top-0 md:top-0  z-[999]">
         <div className="main flex container mx-auto lg:max-w-[1120px]">
           <div className="logo w-[30%]">
             <div className="log  w-[180px]  flex gap-[10px] lg:gap-16">
@@ -48,11 +51,8 @@ const Navbar = () => {
                   />
                 )}
               </div>
-              
-              
               <img src={Img} alt="Logo" className="w-full h-6 mt-1  lg:mt-6 " />
-              
-            
+
               <div className="relative group">
                 <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-5 text-black text-lg mt-0">
                   Shop <IoIosArrowDown className=" lg:mt-3" />
@@ -307,8 +307,43 @@ const Navbar = () => {
               0
             </h3>
             <div className="icon ml-4">
-            <FaAngleDown className="text-2xl lg:hidden" />
+              {
+                loginVisible?
+                <FaAngleDown onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500 lg:hidden" />
+                :
+                <FaAngleUp  onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500  lg:hidden" />
+
+              }
+             
+
             </div>
+            {/* FaAngleDown click stape */}
+              {
+                loginVisible?
+                <div className="LoginSaidbar absolute p-2 bg-gray-400 ml-[-145px] mt-[48px] lg:hidden">
+                <div className="   w-[50%] h-[50%] z-[999] place-content-center ">
+                  <div className="login flex gap-5 mb-2">
+                    <div className="text">
+                      <Link to="/" className=" text-lg text-white font-bold" >Login</Link>
+                      <p className=" w-[200px] text-gray-300">Enter your account</p>
+                    </div>
+                    <div className="icon mt-3 text-lg text-white"><FaAngleRight /></div>
+                  </div>
+                    <div className="line h-[1px] w-[260px] bg-white  mb-2"></div>
+                  <div className="login flex gap-5">
+                    <div className="text">
+                      <Link to="/" className=" text-lg text-blue-500 font-bold" >Track Order</Link>
+                      <p className=" w-[200px] text-gray-300">Know your order status</p>
+                    </div>
+                    <div className="icon mt-3 text-lg text-blue-500"><FaAngleRight /></div>
+                  </div>
+                </div>
+              </div>
+              :
+              ``
+              }
+               
+            {/* FaAngleDown click stape */}
           </div>
         </div>
         {/* Sidebar */}
@@ -340,6 +375,8 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+
+
           </div>
         )}
       </nav>
