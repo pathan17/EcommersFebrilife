@@ -18,6 +18,7 @@ import Banner from "./Banner";
 import HadLine from "./HadLine";
 import LoginPage from "./LoginPage";
 import Footer from "./Footer";
+import ScrollPage from "../Pages/ScrollPage";
 
 
 function App() {
@@ -106,8 +107,9 @@ function App() {
          {/* -----FOOTER----END*/}
         
       
-
-        
+           
+        {/* scrollpage */}
+        <ScrollPage></ScrollPage>
 
 
       
