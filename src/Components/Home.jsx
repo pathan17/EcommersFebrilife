@@ -33,7 +33,10 @@ function App() {
       {/* febrilifeHedline End */}
 
       {/* Navbar start */}
-        <Navbar/> 
+       <div className=" lg:top-0 lg:left-0 lg:w-full lg:sticky z-[999]">
+       <Navbar />
+       </div>
+        
       {/* Navbar End */}
 
       {/* banner start */}

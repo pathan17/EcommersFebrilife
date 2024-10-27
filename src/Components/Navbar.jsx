@@ -32,10 +32,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className=" bg-white  p-3  w-full top-0 sm:top-0 md:top-0  z-[999]">
+      <nav className=" bg-white  p-3 w-full sm:top-0 md:top-0  z-[999] ">
         <div className="main flex container mx-auto lg:max-w-[1120px]">
           <div className="logo w-[30%]">
-            <div className="log  w-[180px]  flex gap-[10px] lg:gap-16">
+            <div className="log  w-[180px]  flex gap-[10px]  lg:gap-16">
               <div className="icon lg:hidden">
                 {sidebarOpen ? (
 
@@ -51,7 +51,7 @@ const Navbar = () => {
                   />
                 )}
               </div>
-              <img src={Img} alt="Logo" className="w-full h-6 mt-1  lg:mt-6 " />
+              <img src={Img} alt="Logo" className="w-full h-6 mt-1 lg:mt-6 " />
 
               <div className="relative group">
                 <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-5 text-black text-lg mt-0">
@@ -278,9 +278,10 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+          {/* search for searchOption input fild--Start */}
           {
             searchOpen ?
-              <div className="relative ml-[130px]">
+              <div className="relative ml-[130px]  flex justify-center items-center sm:flex sm:justify-center  sm:items-center  lg:hidden md:flex md:justify-center md:items-center z-[999]">
                 <FaSearch
                   onClick={() => setSearchOpen(!searchOpen)}
                   className=" absolute top-[50%]  left-[50%]  transform -translate-x-1/2 -translate-y-1/2 text-lg cursor-pointer lg:mt-4 text-blue-400"
@@ -289,10 +290,10 @@ const Navbar = () => {
               :
               <div className="input w-[60%] flex justify-center items-center">
                 <div className="input-field ">
-                  <div className="relative bg-slate-100 p-3 mb-10 w-[380px] mr-16 lg:w-[600px] lg:mt-3 lg:bg-inherit z-[999]">
+                  <div className=" fixed mt-5  w-full mx-auto bg-slate-100 p-2 mb-10 ml-[-200px] md:ml-[-200px] lg:ml-[-300px]  md:w-[380px]  lg:w-[600px] lg:mt-[-17px] lg:block lg:bg-inherit z-[999]">
                     <input
                       type="text"
-                      className="py-1 px-4 text-blue-600  border border-gray-300 focus:outline-none focus:border-blue-500 text-left w-full"
+                      className="py-1 px-4 text-blue-600   border border-gray-300 focus:outline-none focus:border-blue-500 text-left w-full"
                       placeholder="Search by product"
                     />
                     <FaSearch onClick={() => setSearchOpen(!searchOpen)} className="absolute right-7 top-1/2 transform -translate-y-1/2 text-gray-500" />
@@ -300,6 +301,20 @@ const Navbar = () => {
                 </div>
               </div>
           }
+           {/* search for searchOption input fild--END */}
+           {/* INPUT FILD START */}
+           <div className="input w-[60%] lg:mt-[-100px] lg:ml-[-600px]  justify-center items-center hidden md:hidden sm:hidden lg:block lg:z-50">
+                <div className="input-field ">
+                  <div className="relative bg-slate-100 p-3 mb-10 w-[380px]  lg:w-[600px] lg:mt-[-30px] lg:bg-inherit z-[999]">
+                    <input
+                      type="text"
+                      className="py-1 px-4 text-blue-600  border border-gray-300 focus:outline-none focus:border-blue-500 text-left w-full"
+                      placeholder="Search by product"
+                    />
+                  </div>
+                </div>
+              </div>
+           {/* INPUT FILD END */}
 
           <div className="icon  gap-1 ml-[20px] static flex  lg:flex lg:mt-7 ">
             <FaCartShopping className=" text-[23px] mt-1" />
