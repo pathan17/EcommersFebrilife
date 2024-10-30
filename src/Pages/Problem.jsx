@@ -190,11 +190,8 @@ const ScrollPages = (props) => {
                                     {
 
                                         cart ?
-
-
-
                                             <div className=" ml-[-50px] opacity-[100%]">
-                                                <div className=" absolute  bg-gray-400 h-full w-[300px] z-[999] right-0 top-0 transition-all">
+                                                <div className=" absolute  bg-gray-400 h-full w-[300px] z-[999] right-0 top-0">
                                                     <div className="div bg-black h-[45px] w-full top-0 flex gap-x-[100px] text-white z-[999]">
                                                         <div onClick={() => setCart(!cart)} className="cros text-[30px] text-red-600 text-center mt-2 font-bold"><IoMdClose /></div>
                                                         <div className="text">
@@ -249,7 +246,7 @@ const ScrollPages = (props) => {
                                     </div>
                                     {/* ----Image---Items---End---- */}
                                     {/* ----click--book--button--start-- */}
-                                       <div className="div absolute top-0 right-0 z-50">
+                                       <div className="div absolute top-0 right-10 z-50">
                                        <ClickFromButton/>
                                        </div>
                                     {/* ----click--book--button--End-- */}
