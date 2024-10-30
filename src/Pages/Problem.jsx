@@ -215,7 +215,7 @@ const ScrollPages = (props) => {
                                                 </div>
                                             </div>
                                             :
-                                            <div onClick={() => setCart(!cart)} className="icon bg-blue-600 w-[50px] h-[50px] rounded-md absolute ml-[200px] mt-28 right-0 top-[40%]">
+                                            <div onClick={() => setCart(!cart)} className="icon bg-blue-600 w-[50px] h-[50px] rounded-md absolute ml-[200px] mt-15 right-0 top-[40%]">
                                                 <span className=" absolute  text-[15px] text-white content[''] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"><FaShoppingCart /></span>
                                                 <h1 className=" mt-[55px] bg-blue-600 text-center rounded-md h-6 w-6 text-white ml-2">0</h1>
                                             </div>
@@ -246,7 +246,7 @@ const ScrollPages = (props) => {
                                     </div>
                                     {/* ----Image---Items---End---- */}
                                     {/* ----click--book--button--start-- */}
-                                       <div className="div absolute top-0 right-10 z-50">
+                                       <div className="div absolute top-[2%] right-8 z-50">
                                        <ClickFromButton/>
                                        </div>
                                     {/* ----click--book--button--End-- */}
