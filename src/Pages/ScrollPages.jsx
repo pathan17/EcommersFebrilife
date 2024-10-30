@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
-
 const ScrollPages = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
-    const [subItemOpen, setSubItemOpen] = useState(null); // State for sub-items
+    const [subItemOpen, setSubItemOpen] = useState(null); // State for which sub-item is open
 
     // Example items array
     const items = [
@@ -16,20 +15,35 @@ const ScrollPages = () => {
         "Graphic Tee",
         "V-Neck T-shirt",
         "Tank Top",
+        "Womens",
+        "men",
+        "Kids",
+        "Face Mask",
+        "Boys",
+        "Girls",
     ];
-  
-    const displayedItems = items.slice(0, Math.floor(items.length * 0.8)); // Get 80% of items
-
+    const subItems = [
+        "Blank T-shirt37",
+        "Design Shorts2",
+        "Design T-shirt13",
+        "Full Sleeve T-shirt9",
+        "Maggie18",
+        "Panjabi3",
+        "Polo T-shirt8",
+        "Shorts45",
+        " Trouser",
+    ];
+       
     const toggleItems = () => {
         setIsOpen(!isOpen);
     };
 
     const handleItemClick = (item) => {
         setSelectedItem(item);
-       
     };
 
     const toggleSubItems = (item) => {
+        console.log(item)
         setSubItemOpen(subItemOpen === item ? null : item); // Toggle sub-items
     };
 
@@ -39,21 +53,24 @@ const ScrollPages = () => {
                 <div className="main flex gap-[80px] w-full">
                     <div className="scrollbar w-[30%]">
                         <div className="items flex gap-[200px] items-center mt-5" onClick={toggleItems}>
-                            <h1 className=" text-[25px] text-black font-bold capitalize" >newArrival</h1>
+                            <h1 className="text-[25px] text-black font-bold capitalize">newArrival</h1>
                             {isOpen ? <FaMinus /> : <FaPlus />}
                         </div>
                         {isOpen && (
                             <div className="item-list ml-[30px]">
-                                {displayedItems.map((item) => (
-                                    <div className=" text-[22px] text-black font-bold opacity-80 capitalize" key={item}>
+                                {items.map((item) => (
+                                    <div key={item} className="text-[18px] text-black font-bold opacity-80 capitalize">
                                         <div onClick={() => { handleItemClick(item); toggleSubItems(item); }} className="flex justify-between cursor-pointer">
                                             <p>{item}</p>
                                             {subItemOpen === item ? <FaMinus /> : <FaPlus />}
                                         </div>
                                         {subItemOpen === item && (
-                                            <div className="ml-[20px] mt-2 text-[19px] text-gray-600 capitalize">
-                                                <p>Sub-item 1 for {item}</p>
-                                                <p>Sub-item 2 for {item}</p>
+                                            <div className="sub-items ml-5">
+                                                {subItems.map((subItem) => (
+                                                    <div key={subItem} className="text-[15px] text-black opacity-60 capitalize cursor-pointer">
+                                                        <p className=" text-[13px] text-gray-800"  onClick={() => handleItemClick(subItem)}>{subItem}</p>
+                                                    </div>
+                                                ))}
                                             </div>
                                         )}
                                     </div>
@@ -62,7 +79,6 @@ const ScrollPages = () => {
                         )}
                     </div>
                     <div className="scrollbar w-[70%]">
-                        {/* INPUT FIELD START */}
                         <div className="input">
                             <div className="input-field mt-5">
                                 <div className="bg-slate-100 w-full">
@@ -74,15 +90,12 @@ const ScrollPages = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* INPUT FIELD END */}
                         {selectedItem && (
-                            <div className="item-details">
-                                <h2>Details for {selectedItem}</h2>
-                                <p>This is where you can add more information about the selected item.</p>
-                                {/* Add more details or actions here */}
+                            <div className="item-details flex justify-center items-center mt-4">
+                                <h2>Details for :   {selectedItem}</h2>
+                               
                             </div>
                         )}
-                        
                     </div>
                 </div>
             </div>
