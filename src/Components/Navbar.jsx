@@ -54,13 +54,13 @@ const Navbar = () => {
               <img src={Img} alt="Logo" className="w-full h-6 mt-1 lg:mt-6 " />
 
               <div className="relative group">
-                <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-5 text-black text-lg mt-0">
-                  Shop <IoIosArrowDown className=" lg:mt-3" />
+                <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-5 text-black text-lg mt-0 ">
+                  Shop <IoIosArrowDown className=" lg:mt-3 " />
                 </h2>
-                <div className="menu bg-white  p-6 absolute hidden group-hover:block w-[800px]">
-                  <div className="div flex flex-row h-[310px] gap-10">
+                <div className="menu bg-white  p-6 absolute hidden group-hover:block w-[800px] z-[999] overflow-hidden">
+                  <div className="div flex flex-row h-[310px] gap-10 ] ">
                     <ul className="flex flex-col">
-                      <li className="text-black font-bold">
+                      <li className="text-black font-bold z-[999] overflow-hidden">
                         <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens">
                           Mens
                         </Link>

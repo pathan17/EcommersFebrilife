@@ -7,6 +7,9 @@ import { FaShoppingCart } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import img from '../assets/img3.jpg'
+import { FaCartPlus } from "react-icons/fa6";
+import ClickFromButton from "../Components/ClickFromButton";
 
 const ScrollPages = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -53,19 +56,83 @@ const ScrollPages = (props) => {
         setSubItemOpen(subItemOpen === item ? null : item); // Toggle sub-items
     };
 
+    const ImgItems = [
+        {
+            Image: img,
+            Name: "PremiumFullSleeveRaglan",
+            Save: " Save tk. 145",
+            Price: "ট640",
+        },
+        {
+            Image: img,
+            Name: "PremiumFullSleeveRaglan",
+            Save: " Save tk. 145",
+            Price: "ট640",
+        },
+        {
+            Image: img,
+            Name: "PremiumFullSleeveRaglan",
+            Save: " Save tk. 145",
+            Price: "ট640",
+        },
+        {
+            Image: img,
+            Name: "PremiumFullSleeveRaglan",
+            Save: " Save tk. 145",
+            Price: "ট640",
+        },
+        {
+            Image: img,
+            Name: "PremiumFullSleeveRaglan",
+            Save: " Save tk. 145",
+            Price: "ট640",
+        },
+        {
+            Image: img,
+            Name: "PremiumFullSleeveRaglan",
+            Save: " Save tk. 145",
+            Price: "ট640",
+        },
+        {
+            Image: img,
+            Name: "PremiumFullSleeveRaglan",
+            Save: " Save tk. 145",
+            Price: "ট640",
+        },
+        {
+            Image: img,
+            Name: "PremiumFullSleeveRaglan",
+            Save: " Save tk. 145",
+            Price: "ট640",
+        },
+        {
+            Image: img,
+            Name: "PremiumFullSleeveRaglan",
+            Save: " Save tk. 145",
+            Price: "ট640",
+        },
+
+
+
+
+
+
+
+    ]
+
     return (
         <div className="div bg-slate-50">
             <div className="">
                 <div className="  ">
                     <HadLine />
-                    <div className="lg:top-0 lg:left-0 lg:w-full lg:sticky ">
+                    <div className="lg:top-0 lg:left-0 lg:w-full lg:sticky z-50">
                         <Navbar />
                     </div>
                 </div>
                 <div className="container mx-auto "> {/* Adjust padding to avoid overlap with fixed navbar */}
                     <div className="flex justify-center items-center">
                         <div className="main flex gap-[50px] w-full">
-                            <div className="scrollbar w-[30%] max-h-[550px] overflow-y-auto gap-5">
+                            <div className="scrollbar w-[30%] max-h-[500px] overflow-y-auto gap-5">
                                 <div className="items flex gap-[200px] items-center mt-5" onClick={toggleItems}>
                                     <h1 className="text-[25px] text-black font-bold capitalize">newArrival</h1>
                                     {isOpen ? <FaMinus /> : <FaPlus />}
@@ -93,6 +160,7 @@ const ScrollPages = (props) => {
                                 )}
                             </div>
                             <div className="scrollbar w-[70%] max-h-[500px] overflow-y-auto">
+                                {/* input--filed--start */}
                                 <div className="input">
                                     <div className="input-field mt-5 ">
                                         <div className=" relative bg-slate-100 w-full flex">
@@ -102,12 +170,14 @@ const ScrollPages = (props) => {
                                                 placeholder="Search by product"
                                             />
                                             <div className=" relative border border-gray-400 h-10 w-10 text-center ml-1">
-                                            <FaSearch className="absolute right-7 top-1/2 transform -translate-y-1/2 text-gray-600 mr-[-18px]" />
+                                                <FaSearch className="absolute right-7 top-1/2 transform -translate-y-1/2 text-gray-600 mr-[-18px]" />
                                             </div>
 
                                         </div>
                                     </div>
                                 </div>
+                                {/* input--filed--end */}
+
                                 {selectedItem && (
                                     <div className="item-details flex justify-center items-center mt-4">
                                         <h2>Details for: {selectedItem}</h2>
@@ -155,7 +225,35 @@ const ScrollPages = (props) => {
                                     }
                                 </div>
                                 {/* ----cart--click--sidevabr--open--end- */}
-                                <div>
+                                {/* ----Image---Items---Start- */}
+                                <div className="MainImage  ">
+                                    <div className="items flex flex-wrap   gap-5 ">
+                                        {
+                                            ImgItems.map((item, i) => (
+                                                <div key={i} className="item w-[31%] text-center mt-2 relative ">
+                                                    <img src={item.Image} alt="" className=" " />
+                                                    <p className=" absolute bg-red-600 text-white p-[2px] w-[90px] ml-[172px] top-0 right-0">Sale</p>
+                                                    <h2 className=" mt-1">{item.Name}</h2>
+                                                    <p className=" bg-slate-700 text-white p-1 w-[100px] mx-auto mt-2">{item.Save}</p>
+                                                    <p className="  mx-auto mt-1">{item.Price}</p>
+                                                    <div className="cart mt-2">
+                                                        <div className="icon flex items-center justify-center gap-4 bg-black p-2">
+                                                            <FaCartPlus className=" mt-1 text-white" />
+                                                            <h1 className=" capitalize text-[15px] text-white"> Buy Now</h1>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
+                                    {/* ----Image---Items---End---- */}
+                                    {/* ----click--book--button--start-- */}
+                                       <div className="div absolute top-0 right-0 z-50">
+                                       <ClickFromButton/>
+                                       </div>
+                                    {/* ----click--book--button--End-- */}
+                                      
 
                                 </div>
                             </div>
