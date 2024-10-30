@@ -11,7 +11,7 @@ const ScrollPages = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
     const [subItemOpen, setSubItemOpen] = useState(null); // State for which sub-item is open
-    const [cart, setCart] = useState( false);
+    const [cart, setCart] = useState(false);
     // Example items array
     const items = [
         "Half Sleeve T-shirt",
@@ -54,12 +54,14 @@ const ScrollPages = (props) => {
 
     return (
         <div className="div bg-slate-50">
-            <div className="container mx-auto">
-                <div className="fixed top-0 left-0 right-0 z-[999]">
+            <div className="">
+                <div className="  ">
                     <HadLine />
-                    <Navbar />
+                    <div className="lg:top-0 lg:left-0 lg:w-full lg:sticky ">
+                        <Navbar />
+                    </div>
                 </div>
-                <div className="pt-[100px] "> {/* Adjust padding to avoid overlap with fixed navbar */}
+                <div className="container mx-auto "> {/* Adjust padding to avoid overlap with fixed navbar */}
                     <div className="flex justify-center items-center">
                         <div className="main flex gap-[50px] w-full">
                             <div className="scrollbar w-[30%] max-h-[550px] overflow-y-auto gap-5">
@@ -142,7 +144,7 @@ const ScrollPages = (props) => {
                                             </div>
                                             :
                                             <div onClick={() => setCart(!cart)} className="icon bg-blue-600 w-[50px] h-[50px] rounded-md absolute ml-[200px] mt-28 right-0 top-[40%]">
-                                                <span  className=" absolute  text-[15px] text-white content[''] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"><FaShoppingCart /></span>
+                                                <span className=" absolute  text-[15px] text-white content[''] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"><FaShoppingCart /></span>
                                                 <h1 className=" mt-[55px] bg-blue-600 text-center rounded-md h-6 w-6 text-white ml-2">0</h1>
                                             </div>
                                     }
