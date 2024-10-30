@@ -6,6 +6,7 @@ import bag from "../assets/bag.png";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaSearch } from "react-icons/fa";
 
 const ScrollPages = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -93,13 +94,17 @@ const ScrollPages = (props) => {
                             </div>
                             <div className="scrollbar w-[70%] max-h-[500px] overflow-y-auto">
                                 <div className="input">
-                                    <div className="input-field mt-5">
-                                        <div className="bg-slate-100 w-full">
+                                    <div className="input-field mt-5 ">
+                                        <div className=" relative bg-slate-100 w-full flex">
                                             <input
                                                 type="text"
-                                                className="py-1 px-4 text-blue-600 border border-gray-300 focus:outline-none focus:border-blue-500 text-left w-full"
+                                                className="py-1 px-4 text-blue-600 border border-gray-300 focus:outline-none focus:border-blue-500 text-left w-[800px]"
                                                 placeholder="Search by product"
                                             />
+                                            <div className=" relative border border-gray-400 h-10 w-10 text-center ml-1">
+                                            <FaSearch className="absolute right-7 top-1/2 transform -translate-y-1/2 text-gray-600 mr-[-18px]" />
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
