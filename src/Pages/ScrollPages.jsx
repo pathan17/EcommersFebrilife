@@ -7,6 +7,7 @@ import bag from "../assets/bag.png";
 import img from '../assets/img3.jpg';
 import ClickFromButton from "../Components/HomeComponent/ClickFromButton";
 
+
 const ScrollPages = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
@@ -56,10 +57,10 @@ const ScrollPages = () => {
             <div className="bg-slate-50">
                 <HadLine />
                 <Navbar />
-                <div className="container mx-auto flex flex-col md:flex-row gap-5 p-5">
+                <div className="container mx-auto flex flex-col md:flex-row gap-5 lg:gap-[80px] p-5">
                     <div className="scrollbar w-full md:w-[30%] max-h-[500px] overflow-y-auto">
-                        <div className="flex justify-between items-center mt-5" onClick={toggleItems}>
-                            <h1 className="text-[25px] text-black font-bold capitalize">New Arrival</h1>
+                        <div className="flex justify-between items-center mt-5 hidden md:block md:flex md:justify-between lg:flex" onClick={toggleItems}>
+                            <h1 className="text-[25px] text-black font-bold capitalize ">New Arrival</h1>
                             {isOpen ? <FaMinus /> : <FaPlus />}
                         </div>
                         {isOpen && (
@@ -86,11 +87,11 @@ const ScrollPages = () => {
                     </div>
 
                     <div className="w-full md:w-[70%] max-h-[500px] overflow-y-auto">
-                        <div className="input-field mt-5">
+                        <div className="input-field top-16  md:static   fixed z-50">
                             <div className="relative bg-slate-100 w-full flex">
                                 <input
                                     type="text"
-                                    className="py-1 px-4 text-blue-600 border border-gray-300 focus:outline-none focus:border-blue-500 w-full"
+                                    className="py-1 px-4 text-blue-600 border border-gray-300 focus:outline-none focus:border-blue-500 md:w-[600px] lg:w-[800px] w-[300px]"
                                     placeholder="Search by product"
                                 />
                                 <div className="relative border border-gray-400 h-10 w-10 text-center ml-1">
@@ -107,34 +108,37 @@ const ScrollPages = () => {
 
 
 
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-4">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-4 lg:mt-10">
                             {ImgItems.map((item, i) => (
                                 <div key={i} className="item text-center relative">
                                     <img src={item.Image} alt="" className="w-full h-auto" />
                                     <p className="absolute bg-red-600 text-white p-[2px] w-[90px] top-0 right-0">Sale</p>
                                     <h2 className="mt-1">{item.Name}</h2>
-                                    <p className="bg-slate-700 text-white p-1 w-[100px] mx-auto mt-2">{item.Save}</p>
+                                    <button className="bg-slate-700 text-white p-1 w-[100px] mx-auto mt-2 hover:bg-yellow-400 hover:text-black transition-all">{item.Save}</button>
                                     <p className="mx-auto mt-1">{item.Price}</p>
                                     <div className="cart mt-2">
-                                        <div className="icon flex items-center justify-center gap-4 bg-black p-2">
+                                        <button className="icon flex items-center justify-center gap-4 bg-black p-2 w-full hover:bg-green-500 hover:text-white transition-all">
                                             <FaCartPlus className="text-white" />
                                             <h1 className="capitalize text-[15px] text-white">Buy Now</h1>
-                                        </div>
+                                        </button>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="absolute top-2 right-8 z-50 hidden md:block">
-                            <ClickFromButton />
-                        </div>
+                       
 
 
 
                     </div>
                 </div>
             </div>
+           
             {/* add---cart---start */}
+
+            <div className="absolute top-2 right-8 z-50 hidden md:block">
+                            <ClickFromButton />
+                        </div>
             <div className="   z-[999]">
                 {
 

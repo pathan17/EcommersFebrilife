@@ -34,7 +34,7 @@ const Navbar = () => {
     <div>
       <nav className=" bg-white  w-full sm:top-0 md:top-0  z-[999] ">
         <div className="main flex container mx-auto lg:max-w-[1120px]">
-          <div className="logo w-[30%]">
+          <Link to="/" className="logo w-[30%]">
             <div className="log  w-[180px]  flex gap-[10px]  lg:gap-16">
               <div className="icon lg:hidden">
                 {sidebarOpen ? (
@@ -277,7 +277,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
           {/* search for searchOption input fild--Start */}
           {
             searchOpen ?
