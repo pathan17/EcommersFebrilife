@@ -336,7 +336,7 @@ const Navbar = () => {
             {/* FaAngleDown click stape */}
               {
                 loginVisible?
-                <div className="LoginSaidbar absolute p-2 bg-gray-400 ml-[-145px] mt-[48px] lg:hidden">
+                <div className="LoginSaidbar absolute p-2 bg-gray-400 ml-[-145px] mt-[48px] lg:hidden z-50">
                 <div className="   w-[50%] h-[50%] z-[999] place-content-center ">
                   <div className="login flex gap-5 mb-2">
                     <div className="text">
