@@ -16,8 +16,8 @@ function App() {
       <Routes>
         
         <Route path="/" element={ <Home/> } />
+        <Route path="/path" element={ <LoginPage/> } />
         <Route path="/newPage" element={ <ScrollPages/> } />
-        <Route path="SinIn/" element={ <LoginPage/> } />
         
         
       </Routes>

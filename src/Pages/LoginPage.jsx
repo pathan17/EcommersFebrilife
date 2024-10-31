@@ -15,7 +15,7 @@ const LoginPage = () => {
   };
   return (
     <div>
-      <div className="flex items-center justify-center min-h-screen ">
+      <div className="flex items-center justify-center h-screen ">
         <div className=" p-8  w-full max-w-lg">
           <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Sign In</h2>
           <form onSubmit={handleSubmit}>
@@ -61,3 +61,8 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
+
+
+
+

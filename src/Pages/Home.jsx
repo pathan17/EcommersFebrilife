@@ -20,6 +20,7 @@ import Footer from "../Components/HomeComponent/Footer";
 
 
 
+
 function App() {
 
 
@@ -98,11 +99,12 @@ function App() {
         {/* -----Bluk-- Order---start*/}
         <BlukOrderImg/>
         {/* -----Bluk-- Order---End*/}
-        
+
          {/* -----FOOTER----START*/}
          <Footer/> 
          {/* -----FOOTER----END*/}
         
+       
       
            
         

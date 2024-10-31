@@ -6,7 +6,7 @@ import { CgLogIn } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
 
-// import { useState } from "react";
+
 
 
 
@@ -46,12 +46,12 @@ const HadLine = () => {
                       Help
                     </p>
                     {/* Login Button */}
-                    <Link to="SinIn/">
-                    <h4 className="flex justify-center items-center gap-1 text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
+                    
+                    <span className="flex justify-center items-center gap-1 text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
                         <CgLogIn />
-                        <p>Login</p>
-                      </h4>
-                    </Link>
+                        <Link to="/newPage">Login</Link>
+                      </span>
+                    
                   </span>
                 
                 </div>
