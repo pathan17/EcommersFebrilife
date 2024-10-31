@@ -49,7 +49,7 @@ const HadLine = () => {
                     
                     <span className="flex justify-center items-center gap-1 text-lg text-blue-600 hover:text-blue-800 cursor-pointer transition duration-300">
                         <CgLogIn />
-                        <Link to="/newPage">Login</Link>
+                        <Link to="/path">Login</Link>
                       </span>
                     
                   </span>
