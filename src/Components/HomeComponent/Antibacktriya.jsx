@@ -57,6 +57,9 @@ const Antibacktriya = () => {
               <div key={i} className="w-1/2 sm:w-1/3 md:w-[49%] lg:w-1/5 relative mx-auto">
                 <img src={item.IMG1} alt="image" className="rounded-md w-full" />
                 <div className="absolute inset-0 h-full w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
+                <div className=" absolute price bottom-[-6px] ">
+                       <h1 className="text-black bg-white px-[20px] py-[1px] ml-8 rounded-md">৳1000</h1>
+                </div>
               </div>
             ))}
 

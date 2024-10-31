@@ -49,8 +49,11 @@ const FaceMask = () => {
           
           <div className="w-full lg:w-2/3 flex flex-wrap  gap-3 ">
             {FullSleevImg.map((item, i) => (
-              <div key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[23%] mx-auto">
+              <div key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[23%] mx-auto relative">
                 <img src={item.IMG1} alt="" className="w-full" />
+                <div className=" absolute price bottom-[-6px] ">
+                       <h1 className="text-black bg-white px-[30px] py-[1px] ml-8 rounded-md">৳1000</h1>
+                </div>
               </div>
             ))}
           </div>

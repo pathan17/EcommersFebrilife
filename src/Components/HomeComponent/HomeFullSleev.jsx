@@ -53,10 +53,15 @@ const HomeFullSleev = () => {
 
           <div className="w-full lg:w-2/3 flex flex-wrap gap-3 sm:flex-wrap sm:mx-auto">
             {FullSleevImg.map((item, i) => (
-              <div key={i} className="w-1/2 sm:w-[47%] lg:w-[20%] mx-auto">
-                <img src={item.IMG1} alt="" className="w-full" />
+              <div key={i} className="w-1/2 sm:w-[47%] lg:w-[20%] mx-auto relative">
+                <img src={item.IMG1} alt="" className="w-full " />
+                <div className=" absolute price bottom-[-6px] ">
+                       <h1 className="text-black bg-white px-[30px] py-[1px] ml-4 rounded-md">৳1000</h1>
+                </div>
               </div>
+
             ))}
+           
           </div>
         </div>
       </div>
