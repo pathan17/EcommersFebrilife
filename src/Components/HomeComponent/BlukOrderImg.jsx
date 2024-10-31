@@ -1,4 +1,4 @@
-import Img1 from '../assets/MenShort.jpg';
+import Img1 from '../../assets/MenShort.jpg';
 import { FaChevronRight } from "react-icons/fa";
 
 const bulkOrderImage = [

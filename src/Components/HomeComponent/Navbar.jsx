@@ -1,6 +1,6 @@
 import { FaSearch } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
-import Img from "../assets/fairlifeImg.svg";
+import Img from "../../assets/fairlifeImg.svg";
 import { Link, NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaBars } from "react-icons/fa";

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import JacketImg from "../assets/MensJacketImg.jpg";
+import JacketImg from "../../assets/MensJacketImg.jpg";
 
 const MensJacket = () => {
   const FullSleev = [

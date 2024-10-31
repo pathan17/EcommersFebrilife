@@ -1,4 +1,4 @@
-import MensShort from "../assets/MenShort.jpg";
+import MensShort from "../../assets/MenShort.jpg";
 
 const DesignerEdition = () => {
     const deginerImg=[

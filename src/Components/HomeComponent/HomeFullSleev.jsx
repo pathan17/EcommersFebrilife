@@ -1,5 +1,5 @@
-import FullSleevIMG from "../assets/IMG5.jpg";
-import FullSleevIMG1 from "../assets/img6.jpg";
+import FullSleevIMG from "../../assets/IMG5.jpg";
+import FullSleevIMG1 from "../../assets/img6.jpg";
 
 const HomeFullSleev = () => {
   const FullSleev = [

@@ -1,5 +1,5 @@
-import MaskImg from "../assets/MaskImg.jpg";
-import MaskImg1 from "../assets/mask1.jpg";
+import MaskImg from "../../assets/MaskImg.jpg";
+import MaskImg1 from "../../assets/mask1.jpg";
 
 const FaceMask = () => {
   const FullSleev = [

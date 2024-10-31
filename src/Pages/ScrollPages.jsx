@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { FaPlus, FaMinus, FaShoppingCart, FaSearch, FaCartPlus } from "react-icons/fa";
 import { IoMdClose, IoIosArrowForward } from "react-icons/io";
-import HadLine from "../Components/HadLine";
-import Navbar from "../Components/Navbar";
+import HadLine from "../Components/HomeComponent/HadLine";
+import Navbar from "../Components/HomeComponent/Navbar";
 import bag from "../assets/bag.png";
 import img from '../assets/img3.jpg';
-import ClickFromButton from "../Components/ClickFromButton";
+import ClickFromButton from "../Components/HomeComponent/ClickFromButton";
 
 const ScrollPages = () => {
     const [isOpen, setIsOpen] = useState(false);

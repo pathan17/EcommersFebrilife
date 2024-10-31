@@ -1,4 +1,4 @@
-import designerImage from "../assets/img4.jpg";
+import designerImage from "../../assets/img4.jpg";
 
 const DesignerEdition = () => {
     const designerImg = [

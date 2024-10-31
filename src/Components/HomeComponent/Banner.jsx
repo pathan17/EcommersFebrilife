@@ -1,4 +1,4 @@
-import banner from "../assets/img1.jpg";
+import banner from "../../assets/img1.jpg";
 import ClickFromButton from "./ClickFromButton";
 
 

@@ -1,23 +1,22 @@
 
-import HomeFullSleev from "./HomeFullSleev";
-import NewArriVal from "./NewArriVal";
-import DesignerEdition from "./DesignerEdition";
-import ShopMenWomenKids from "./ShopMenWomenKids";
-import FabriLife from "./FabriLife";
-import MensJacket from "./MensJacket";
-import SingleJersey from "./SingleJersey";
-import MenShort from "./MensShort"
-import SportsTrousers from "./SportsTrousers";
-import SportsTshirt from "./SportsTshirt";
-import FaceMask from "./FaceMask";
-import Premium from "./Premium";
-import Antibacktriya from "./Antibacktriya";
-import BlukOrderImg from "./BlukOrderImg";
-import Navbar from "./Navbar";
-import Banner from "./Banner";
-import HadLine from "./HadLine";
-import LoginPage from "./LoginPage";
-import Footer from "./Footer";
+import HomeFullSleev from "../Components/HomeComponent/HomeFullSleev";
+import NewArriVal from "../Components/HomeComponent/NewArriVal";
+import DesignerEdition from "../Components/HomeComponent/DesignerEdition";
+import ShopMenWomenKids from "../Components/HomeComponent/ShopMenWomenKids";
+import FabriLife from "../Components/HomeComponent/FabriLife";
+import MensJacket from "../Components/HomeComponent/MensJacket";
+import SingleJersey from "../Components/HomeComponent/SingleJersey";
+import MenShort from "../Components/HomeComponent/MensShort"
+import SportsTrousers from "../Components/HomeComponent/SportsTrousers";
+import SportsTshirt from "../Components/HomeComponent/SportsTshirt";
+import FaceMask from "../Components/HomeComponent/FaceMask";
+import Premium from "../Components/HomeComponent/Premium";
+import Antibacktriya from "../Components/HomeComponent/Antibacktriya";
+import BlukOrderImg from "../Components/HomeComponent/BlukOrderImg";
+import Navbar from "../Components/HomeComponent/Navbar";
+import Banner from "../Components/HomeComponent/Banner";
+import HadLine from "../Components/HomeComponent/HadLine";
+import Footer from "../Components/HomeComponent/Footer";
 
 
 
@@ -99,9 +98,7 @@ function App() {
         {/* -----Bluk-- Order---start*/}
         <BlukOrderImg/>
         {/* -----Bluk-- Order---End*/}
-
-        <LoginPage/>
-
+        
          {/* -----FOOTER----START*/}
          <Footer/> 
          {/* -----FOOTER----END*/}

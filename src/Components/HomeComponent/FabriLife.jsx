@@ -1,5 +1,5 @@
 import { FaChevronRight } from "react-icons/fa";
-import FabrilifeImg from "../assets/FabrilifeImg.png";
+import FabrilifeImg from "../../assets/FabrilifeImg.png";
 
 const FabriLife = () => {
     return (

@@ -1,5 +1,5 @@
-import AntibacktriyaImg from "../assets/AntibacktryaImag.jpg";
-import AntibackImg1 from "../assets/AntibacktriyaImg1.jpg";
+import AntibacktriyaImg from "../../assets/AntibacktriyaImg1.jpg";
+import AntibackImg1 from "../../assets/AntibacktryaImag.jpg";
 import { Link } from "react-router-dom";
 
 const Antibacktriya = () => {
