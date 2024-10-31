@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import image from "../assets/img3.jpg";
 
 const NewArriVal = () => {
@@ -73,7 +74,7 @@ const NewArriVal = () => {
                 >
                   <div className="flex justify-center items-center">
                     <h1 className="text-center bg-white w-[100px] text-black rounded-lg z-20">
-                      Link
+                      <Link to="/newPage">Sports T-shirt</Link>
                     </h1>
                   </div>
                   <div className="img mx-auto">
