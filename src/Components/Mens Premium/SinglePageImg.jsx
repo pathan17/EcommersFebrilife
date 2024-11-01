@@ -21,7 +21,7 @@ const SinglePageImg = () => {
         // Here you would add the item to the cart
         console.log(`Added ${quantity} item(s) to the cart`);
     };
-    // incrise--and---decress--start
+    // incrise--and---decress--end
 
     return (
         <div>
@@ -53,7 +53,7 @@ const SinglePageImg = () => {
                                     ))}
                                 </div>
                             </div>
-                           
+                           {/* increase--and-----decresae---start */}
                             <div className="addCart flex gap-5 mt-5">
                                 <div className="bg px-5 py-0 bg-white text-black flex items-center gap-5">
                                     <h1 className="cursor-pointer text-[30px]" onClick={increaseQuantity}>+</h1>
@@ -67,6 +67,8 @@ const SinglePageImg = () => {
                                     <span>+ Add To Cart</span>
                                 </div>
                             </div>
+                           {/* increase--and-----decresae---end */}
+
                             <div className="line mt-5 h-[1px] bg-black w-[500px]"></div>
                             <div className="PREMIUM mt-5">
                                 <h1 className="text-black font-bold text-[18px]">PREMIUM FULL SLEEVE FOR MEN</h1>

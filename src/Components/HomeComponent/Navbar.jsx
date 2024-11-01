@@ -52,7 +52,7 @@ const Navbar = () => {
                 )}
               </div>
               <img src={Img} alt="Logo" className="w-full h-6 mt-1 lg:mt-6 " />
-
+             {/* Shop--hover--option--start */}
               <div className="relative group">
                 <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-5 text-black text-lg mt-0 ">
                   Shop <IoIosArrowDown className=" lg:mt-3 " />
@@ -276,6 +276,8 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
+             {/* Shop--hover--option--End */}
+
             </div>
           </Link>
           {/* search for searchOption input fild--Start */}
@@ -317,6 +319,7 @@ const Navbar = () => {
               </div>
            {/* INPUT FILD END */}
 
+             {/* Navbar--AdCart--Icon--start */}
           <div className="icon  gap-1 ml-[20px] static flex  lg:flex lg:mt-7 ">
             <FaCartShopping className=" text-[23px] mt-1" />
             <h3 className=" bg-blue-600 rounded-md h-4 w-4  flex items-center justify-center text-white text-[10px] mt-2 font-bold">
@@ -330,9 +333,10 @@ const Navbar = () => {
                 <FaAngleUp  onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500  lg:hidden" />
 
               }
-             
 
             </div>
+             {/* Navbar--AdCart--Icon--End */}
+
             {/* FaAngleDown click stape */}
               {
                 loginVisible?
