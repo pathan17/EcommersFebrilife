@@ -53,7 +53,7 @@ const MensJacket = () => {
                 <img src={item.IMG1} alt="image" className="w-full rounded-md " />
                 <div className="absolute inset-0 h-full w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
                 <div className=" absolute price bottom-[-6px] ">
-                       <h1 className="text-black bg-white px-[30px] py-[1px] ml-4 rounded-md">৳1000</h1>
+                       <Link to="/Price"><h1 className="text-black bg-white px-[30px] py-[1px] ml-4 rounded-md">৳1000</h1></Link>
                 </div>
               </div>
             ))}

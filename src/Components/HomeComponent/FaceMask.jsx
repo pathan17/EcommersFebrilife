@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MaskImg from "../../assets/MaskImg.jpg";
 import MaskImg1 from "../../assets/mask1.jpg";
 
@@ -52,7 +53,7 @@ const FaceMask = () => {
               <div key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[23%] mx-auto relative">
                 <img src={item.IMG1} alt="" className="w-full" />
                 <div className=" absolute price bottom-[-6px] ">
-                       <h1 className="text-black bg-white px-[30px] py-[1px] ml-8 rounded-md">৳1000</h1>
+                       <Link to="/Price"><h1 className="text-black bg-white px-[30px] py-[1px] ml-8 rounded-md">৳1000</h1></Link>
                 </div>
               </div>
             ))}

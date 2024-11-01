@@ -1,5 +1,6 @@
 import FullSleevIMG from "../../assets/IMG5.jpg";
 import FullSleevIMG1 from "../../assets/img6.jpg";
+import { Link } from "react-router-dom";
 
 const HomeFullSleev = () => {
   const FullSleev = [
@@ -56,7 +57,7 @@ const HomeFullSleev = () => {
               <div key={i} className="w-1/2 sm:w-[47%] lg:w-[20%] mx-auto relative">
                 <img src={item.IMG1} alt="" className="w-full " />
                 <div className=" absolute price bottom-[-6px] ">
-                       <h1 className="text-black bg-white px-[30px] py-[1px] ml-4 rounded-md">৳1000</h1>
+                       <Link to="/Price"><h1 className="text-black bg-white px-[30px] py-[1px] ml-4 rounded-md">৳1000</h1></Link>
                 </div>
               </div>
 

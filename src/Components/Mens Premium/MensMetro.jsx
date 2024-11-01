@@ -58,10 +58,10 @@ const MensMetro = () => {
                                 <h1 className="cursor-pointer text-[30px]" onClick={decreaseQuantity}>-</h1>
                             </div>
                             <div
-                                className="bg px-5 w-[140px] py-1 bg-gray-500 text-white flex items-center justify-center cursor-pointer"
+                                className="bg px-5 w-[140px] py-1 bg-gray-500 hover:bg-green-500 hover:text-white transition-all text-white flex items-center justify-center cursor-pointer"
                                 onClick={handleAddToCart}
                             >
-                                <span>+ Add To Cart</span>
+                                <span className="">+ Add To Cart</span>
                             </div>
                         </div>
 
