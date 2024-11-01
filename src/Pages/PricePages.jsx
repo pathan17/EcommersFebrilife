@@ -1,12 +1,17 @@
+import Footer from "../Components/HomeComponent/Footer";
+import AdCartLike from "../Components/Mens Premium/AdCartLike";
 import Frequently from "../Components/Mens Premium/Frequently";
-import SinglePageImg from "../Components/Mens Premium/SinglePageImg";
+import MensMetro from "../Components/Mens Premium/MensMetro";
+
 
 
 const PricePages = (props) => {
     return (
         <div>
-            <SinglePageImg/>
+             <MensMetro/>
             <Frequently/>
+            <AdCartLike/>
+            <Footer/>
         </div>
     );
 };

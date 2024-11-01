@@ -1,7 +1,7 @@
 import MensMetroImg from "../../assets/mensMetro.jpg";
 import { useState } from 'react';
 
-const SinglePageImg = () => {
+const MensMetro = () => {
     const [activeSize, setActiveSize] = useState(null);
 
     const sizes = ['S', 'M', 'L', 'XL'];
@@ -37,6 +37,7 @@ const SinglePageImg = () => {
                         <div className="text">
                             <h1 className=" text-black text-[30px] font-semibold ">Mens Metro Edition Premium Full Sleeve T-shirt - Endless</h1>
                             <p className="text-[30px]"> ৳ 640</p>
+                            {/* Select---size--start */}
                             <p className="mt-4">Select Size:</p>
                             <div className="size mt-4">
                                 <div className="size flex gap-2">
@@ -53,6 +54,8 @@ const SinglePageImg = () => {
                                     ))}
                                 </div>
                             </div>
+                            {/* Select---size--End */}
+
                            {/* increase--and-----decresae---start */}
                             <div className="addCart flex gap-5 mt-5">
                                 <div className="bg px-5 py-0 bg-white text-black flex items-center gap-5">
@@ -69,6 +72,7 @@ const SinglePageImg = () => {
                             </div>
                            {/* increase--and-----decresae---end */}
 
+                           {/* PREMIUM--and---FABRIC---start */}
                             <div className="line mt-5 h-[1px] bg-black w-[500px]"></div>
                             <div className="PREMIUM mt-5">
                                 <h1 className="text-black font-bold text-[18px]">PREMIUM FULL SLEEVE FOR MEN</h1>
@@ -85,8 +89,9 @@ const SinglePageImg = () => {
                                      <li>Preshrunk to minimize shrinkage</li>
                                 </ul>
                             </div>
+                           {/* PREMIUM--and---FABRIC---End */}
                           
-                            {/* incress--and--dicress--end */}
+                            
                         </div>
                     </div>
                 </div>
@@ -96,4 +101,4 @@ const SinglePageImg = () => {
     );
 };
 
-export default SinglePageImg;
+export default MensMetro;

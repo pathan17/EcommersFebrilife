@@ -37,7 +37,7 @@ const Frequently = () => {
                        </div>
                        <div className="div mb-2">
                        <div className="text flex gap-[60px] bg-gray-500 justify-center items-center">
-                        <h1>M</h1>
+                        <h1>S</h1>
                         <h1>39</h1>
                         <h1>27.5</h1>
                         <h1>8.5</h1>
@@ -59,9 +59,21 @@ const Frequently = () => {
                         </div>
                         
                        </div>
+                       <div className="div mb-2">
+                       <div className="text flex gap-[60px] bg-gray-500 justify-center items-center">
+                        <h1>L</h1>
+                        <h1>39</h1>
+                        <h1>27.5</h1>
+                        <h1>8.5</h1>
+                        <h1>8.5</h1>
+                     
+                        			
+                        </div>
+                        
+                       </div>
                        <div className="div">
                        <div className="text flex gap-[60px] bg-gray-500 justify-center items-center">
-                        <h1>M</h1>
+                        <h1>XL</h1>
                         <h1>39</h1>
                         <h1>27.5</h1>
                         <h1>8.5</h1>
