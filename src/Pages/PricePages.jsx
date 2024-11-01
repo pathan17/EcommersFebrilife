@@ -8,10 +8,10 @@ import MensMetro from "../Components/Mens Premium/MensMetro";
 const PricePages = (props) => {
     return (
         <div>
-             <MensMetro/>
-            <Frequently/>
-            <AdCartLike/>
-            <Footer/>
+            <MensMetro />
+            <Frequently />
+            <AdCartLike />
+            <Footer />
         </div>
     );
 };
