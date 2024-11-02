@@ -7,6 +7,7 @@ import img from '../assets/img3.jpg';
 import ClickFromButton from "../Components/HomeComponent/ClickFromButton";
 import AdCart from "../Components/HomeComponent/AdCart";
 import PriceDetels from "../Components/Mens Premium/PriceDetels";
+import { Link } from "react-router-dom";
 
 
 const ScrollPages = () => {
@@ -113,9 +114,9 @@ const ScrollPages = () => {
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-4 lg:mt-10">
                             {ImgItems.map((item, i) => (
                                 <div key={i} className="item text-center relative">
-                                    <div className="">
+                                    <Link to="/Price" className="">
                                         <img src={item.Image} alt="" className="w-[180px] h-[180px] mx-auto" />
-                                    </div>
+                                    </Link>
                                     <p className="absolute bg-red-600 text-white p-[1px] w-[70px] top-0 right-[36px]">Sale</p>
                                     <h2 className="mt-1">{item.Name}</h2>
                                     <button className="bg-slate-700 text-white p-0 w-[100px] mx-auto mt-1 hover:bg-yellow-400 hover:text-black transition-all">{item.Save}</button>
