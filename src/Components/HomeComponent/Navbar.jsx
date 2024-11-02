@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className=" bg-white  w-full sm:top-0 md:top-0  z-[999] ">
-        <div className="main flex container mx-auto lg:max-w-[1120px]">
+        <div className="main flex container mx-auto ">
           <Link to="/" className="logo w-[30%]">
             <div className="log  w-[180px]  flex gap-[10px]  lg:gap-16">
               <div className="icon lg:hidden">
@@ -47,98 +47,98 @@ const Navbar = () => {
                 ) : (
                   <FaBars
                     onClick={() => setSidebarOpen(!sidebarOpen)}
-                    className=" text-[30px]"
+                    className=" text-[30px] mt-6 ml-2"
                   />
                 )}
               </div>
-              <img src={Img} alt="Logo" className="w-full h-6 mt-1 lg:mt-6 " />
+              <img src={Img} alt="Logo" className="w-full h-[80px] ml-3" />
              {/* Shop--hover--option--start */}
               <div className="relative group">
-                <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-5 text-black text-lg mt-0 ">
-                  Shop <IoIosArrowDown className=" lg:mt-3 " />
+                <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-7 text-black font-bold text-[18px] mt-0 hover:text-blue-600 ">
+                  Shop <IoIosArrowDown className=" lg:mt-1 " />
                 </h2>
                 <div className="menu bg-white  p-6 absolute hidden group-hover:block w-[800px] z-[999] overflow-hidden">
                   <div className="div flex flex-row h-[310px] gap-10 ] ">
                     <ul className="flex flex-col">
-                      <li className="text-black font-bold z-[999] overflow-hidden">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens">
+                      <li className="text-black font-bold z-[999]  text-lg">
+                        <Link to="/newPage">
                           Mens
                         </Link>
                       </li>
                       <li className="text-black ">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Printed">
+                        <Link to="/newPage">
                           T-shart
                         </Link>
                       </li>
                       <li className="text-black ">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%☻20Panjabi">
+                        <Link to="/newPage">
                           T-sart(Raglan)
                         </Link>
                       </li>
                       <li className="text-black ">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Cut%20%26%20Stitch%20%28Designer%20Edition%29&refinementList%5Bcats%5D%5B1%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Cut%20%26%20Stitch">
+                        <Link to="/newPage">
                           T-sart(Cut & Stitch)
                         </Link>
                       </li>
                       <li className="text-black">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Sports">
+                        <Link to="/newPage">
                           T-sart(sports&Edition)
                         </Link>
                       </li>
                       <li className="text-black">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Blank">
+                        <Link to="/newPage">
                           T-shirt(Blanks)
                         </Link>
                       </li>
                       <li className="text-black">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt">
+                        <Link to="/newPage">
                           Full Sleev T-shirt
                         </Link>
                       </li>
                       <li className="text-black">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Raglan&refinementList%5Bcats%5D%5B1%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Raglan%20%28Designer%20Edition%29">
+                        <Link to="/newPage">
                           Full Sleev (RagLan)
                         </Link>
                       </li>
                       <li className="text-black">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Cut%20%26%20Stitch%20%28Designer%20Edition%29&refinementList%5Bcats%5D%5B1%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Cut%20%26%20Stitch">
+                        <Link to="/newPage">
                           Full Sleeve (Cut&Stitch)
                         </Link>
                       </li>
                       <li className="text-black">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Full%20Sleeve%20T-shirt%20%3E%20Blank">
+                        <Link to="/newPage">
                           Full Sleeve (Blanks)
                         </Link>
                       </li>
                       <li className="text-black ">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Accesorries%20%3E%20Wallet">
+                        <Link to="/newPage">
                           Wallet
                         </Link>
                       </li>
                       <li className="text-black">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Accesorries%20%3E%20Belt">
+                        <Link to="/newPage">
                           Belt
                         </Link>
                       </li>
                     </ul>
                     <ul className="">
                       <li className="text-black  font-bold text-lg">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Womens">
+                        <Link to="/newPage">
                           Womens
                         </Link>
                       </li>
                       <li className="text-black ">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Womens%20%3E%20Kurti%20Tunic%20And%20Tops">
+                        <Link to="/newPage">
                           Kurti, Tunic&Tops
                         </Link>
                       </li>
                       <li className="text-black">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Womens%20%3E%20T-Shirt">
+                        <Link to="/newPage">
                           T-Shirt
                         </Link>
                       </li>
                       <li className="text-black">
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Womens%20%3E%20Comfy%20Trouser">
+                        <Link to="/newPage">
                           Comfy Trouser
                         </Link>
                       </li>
@@ -146,49 +146,49 @@ const Navbar = () => {
                     <ul>
                       <li className="text-black font-bold text-lg">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids">
+                        <Link to="/newPage">
                           Kids
                         </Link>{" "}
                       </li>
                       <li className="text-black ">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Printed">
+                        <Link to="/newPage">
                           T-shirt
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Maggie">
+                        <Link to="/newPage">
                           Maggie
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Blank">
+                        <Link to="/newPage">
                           Plain T-shirt
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Full%20Sleeve%20T-shirt">
+                        <Link to="/newPage">
                           Full Sleeve T-shirt
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Polo%20T-shirt">
+                        <Link to="/newPage">
                           Polo T-shirt
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Shorts">
+                        <Link to="/newPage">
                           Shorts
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Kids%20%3E%20Trouser">
+                        <Link to="/newPage">
                           Trouser
                         </Link>{" "}
                       </li>
@@ -196,37 +196,37 @@ const Navbar = () => {
                     <ul>
                       <li className="text-black font-bold text-lg">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask">
+                        <Link to="/newPage">
                           Face Mask
                         </Link>{" "}
                       </li>
                       <li className="text-black ">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Professional%207%20Layer%20Mask">
+                        <Link to="/newPage">
                           Professional 7 Layer Mask
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Sports%20Edition">
+                        <Link to="/newPage">
                           Sports Edition
                         </Link>{" "}
                       </li>
                       <li className="text-black ">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Womens%20Designer%20Edition">
+                        <Link to="/newPage">
                           Womens Designer Edition
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Womens%20Embroidery%20Edition">
+                        <Link to="/newPage">
                           Womens Embroidery Edition
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Face%20Mask%20%3E%20Kids%20Mask">
+                        <Link to="/newPage">
                           Kids Face Mask
                         </Link>{" "}
                       </li>
@@ -238,37 +238,37 @@ const Navbar = () => {
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Sports%20%3E%20Football%20Jersey">
+                        <Link to="/newPage">
                           Football Jersey
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Sports%20%3E%20Sports%20T-shirt&refinementList%5Bcats%5D%5B1%5D=Mens%20%3E%20Half%20Sleeve%20T-shirt%20%3E%20Sports">
+                        <Link to="/newPage">
                           Sports T-shirt
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Maggie">
+                        <Link to="/newPage">
                           Maggie (Single Jersey)
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Shorts">
+                        <Link to="/newPage">
                           Shorts
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Underwear">
+                        <Link to="/newPage">
                           Underware
                         </Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link to="https://fabrilife.com/shop?refinementList%5Bcats%5D%5B0%5D=Mens%20%3E%20Socks">
+                        <Link >
                           Socks
                         </Link>{" "}
                       </li>
@@ -305,7 +305,7 @@ const Navbar = () => {
           }
            {/* search for searchOption input fild--END */}
            {/* INPUT FILD START */}
-           <div className="input w-[60%] lg:p-4 justify-center items-center hidden  lg:block">
+           <div className="input w-[60%] md:ml-8 lg:p-4 justify-center items-center hidden  lg:block">
                 <div className="input-field ">
                   <div className=" relative  p-3  w-[380px]  lg:w-[600px]   z-[999]">
                     <input
@@ -320,12 +320,12 @@ const Navbar = () => {
            {/* INPUT FILD END */}
 
              {/* Navbar--AdCart--Icon--start */}
-          <div className="icon  gap-1 ml-[20px] static flex  lg:flex lg:mt-7 ">
-            <FaCartShopping className=" text-[23px] mt-1" />
-            <h3 className=" bg-blue-600 rounded-md h-4 w-4  flex items-center justify-center text-white text-[10px] mt-2 font-bold">
+          <div className="icon  gap-[2px] ml-[20px] mt-6 static flex lg:ml-[-60px]  lg:flex lg:mt-7  ">
+            <FaCartShopping className=" text-[23px] mt-1 " />
+            <h3 className=" bg-blue-600 rounded-md h-4 w-4  flex items-center justify-center text-white text-[10px] mt-2 font-bold mr-[10px]">
               0
             </h3>
-            <div className="icon ml-4">
+            <div className="icon mr-[30px]">
               {
                 loginVisible?
                 <FaAngleDown onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500 lg:hidden" />

@@ -3,7 +3,7 @@ import { FaChevronRight } from "react-icons/fa";
 const Premium = () => {
   return (
     <div>
-      <div className="new p-4 sm:p-6 bg-green-200 h-[100px] container mx-auto lg:max-w-[1120px] mt-[60px]">
+      <div className="new  sm:p-6 bg-green-200 h-[100px] container mx-auto lg:max-w-[1120px] mt-[60px]">
         <div className="text-center">
           <p className="text-green-500 lg:mb-[-17px] text-xs sm:text-sm md:text-base">
             THE BEST QUALITY SOCKS YOU CAN FIND IN BANGLADESH

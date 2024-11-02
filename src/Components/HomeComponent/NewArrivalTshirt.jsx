@@ -70,13 +70,15 @@ const NewArrivalTshirt = () => {
                       <Link to="/newPage">Sports T-shirt</Link>
                     </h1>
                   </div>
-                  <div className="img mx-auto">
+                 <Link to="/newPage">
+                 <div className="img mx-auto">
                     <img
                       src={item.img}
                       alt="img"
                       className="mt-[-20px] rounded-md"
                     />
                   </div>
+                 </Link>
                 </div>
               ))}
             </div>

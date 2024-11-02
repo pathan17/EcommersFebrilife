@@ -3,7 +3,7 @@ import FrequentlyImg from "../../assets/FreQUENTLY.jpg";
 const Frequently = () => {
     return (
         <div>
-            <div className="Frequently mt-5 p-4">
+            <div className="Frequently mt-5 ">
                 <div className="main container mx-auto lg:max-w-[1120px] flex flex-col md:flex-row gap-5">
                     <div className="left w-full md:w-[30%] flex flex-col items-center md:items-start">
                         <div className="text">

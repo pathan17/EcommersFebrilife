@@ -6,10 +6,11 @@ import Navbar from "../Components/HomeComponent/Navbar";
 import img from '../assets/img3.jpg';
 import ClickFromButton from "../Components/HomeComponent/ClickFromButton";
 import AdCart from "../Components/HomeComponent/AdCart";
+import PriceDetels from "../Components/Mens Premium/PriceDetels";
 
 
 const ScrollPages = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     const [selectedItem, setSelectedItem] = useState(null);
     const [subItemOpen, setSubItemOpen] = useState(null);
 
@@ -51,6 +52,7 @@ const ScrollPages = () => {
         Save: " Save tk. 145",
         Price: "ট640",
     });
+    const [adCart, setAdCart] = useState(false)
 
     return (
         <div className="relative">
@@ -111,19 +113,32 @@ const ScrollPages = () => {
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-4 lg:mt-10">
                             {ImgItems.map((item, i) => (
                                 <div key={i} className="item text-center relative">
-                                    <img src={item.Image} alt="" className="w-full h-auto" />
-                                    <p className="absolute bg-red-600 text-white p-[2px] w-[90px] top-0 right-0">Sale</p>
+                                    <div className="">
+                                        <img src={item.Image} alt="" className="w-[180px] h-[180px] mx-auto" />
+                                    </div>
+                                    <p className="absolute bg-red-600 text-white p-[1px] w-[70px] top-0 right-[36px]">Sale</p>
                                     <h2 className="mt-1">{item.Name}</h2>
-                                    <button className="bg-slate-700 text-white p-1 w-[100px] mx-auto mt-2 hover:bg-yellow-400 hover:text-black transition-all">{item.Save}</button>
+                                    <button className="bg-slate-700 text-white p-0 w-[100px] mx-auto mt-1 hover:bg-yellow-400 hover:text-black transition-all">{item.Save}</button>
                                     <p className="mx-auto mt-1">{item.Price}</p>
-                                    <div className="cart mt-2">
-                                        <button className="icon flex items-center justify-center gap-4 bg-black p-2 w-full hover:bg-green-500 hover:text-white transition-all">
+                                    <div className="cart mt-1">
+
+
+                                        <button onClick={() => setAdCart(!adCart)} className="icon flex items-center justify-center gap-4 bg-black p-1 w-full hover:bg-green-500 hover:text-white transition-all">
                                             <FaCartPlus className="text-white" />
                                             <h1 className="capitalize text-[15px] text-white">Buy Now</h1>
                                         </button>
+
                                     </div>
                                 </div>
+
                             ))}
+                         {
+                            adCart&&(
+                            <div onClick={() => setAdCart(!adCart)} className="div z-[999] absolute top-[32px] ">
+                                <PriceDetels    />
+                            </div>
+                          )
+                         }
                         </div>
 
 

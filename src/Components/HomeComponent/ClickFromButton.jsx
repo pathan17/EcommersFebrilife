@@ -36,7 +36,7 @@ const ClickFromButton = () => {
     };
 
     return (
-        <div className="p-10 gap-5 top-0 relative ">
+        <div className=" gap-5 top-0 relative ">
 
             {
                 isFormVisible && (

@@ -4,7 +4,7 @@ import FabrilifeImg from "../../assets/FabrilifeImg.png";
 const FabriLife = () => {
     return (
         <div>
-            <div className="Fabrilife  p-6 container mx-auto lg:max-w-[1120px] mt-[80px]">
+            <div className="Fabrilife   container mx-auto lg:max-w-[1120px] mt-[80px]">
                 <div className="main flex flex-col lg:flex-row justify-between items-center gap-4 ">
                     <div className="text w-full lg:w-[70%]">
                         <span className="flex gap-2">
