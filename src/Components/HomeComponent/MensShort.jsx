@@ -37,7 +37,7 @@ const DesignerEdition = () => {
                   <div className="img mx-auto relative">
                     <img src={item.IMAGE} alt="img" className=" mt-[-20px] rounded-md" />
                     <div className=" absolute price bottom-[-6px] ">
-                      <Link to="/Price"><h1 className="text-black bg-white px-[15px] py-[1px] ml-12 rounded-md">৳1000</h1></Link>
+                      <Link to="/Price"><h1 className="text-black bg-white px-[15px] py-[1px] lg:ml-[50px] ml-[-8px] rounded-md">৳1000</h1></Link>
                     </div>
                   </div>
                 </Link>

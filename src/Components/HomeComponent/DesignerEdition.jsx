@@ -10,20 +10,20 @@ const DesignerEdition = () => {
 
     return (
         <div>
-            <div className="container  mx-auto lg:mt-[] lg:max-w-[1120px]">
-                <div className="flex flex-wrap gap-[37px] mt-2 justify-center">
+            <div className="container p-1 mx-auto lg:mt-[] lg:max-w-[1120px]">
+                <div className="flex flex-wrap gap-[26px] mt-2 justify-center">
                     {
                         designerImg.map((item, i) => (
                             <div
                                 key={i}
                                 className="item bg-white mt-[20px] rounded-md 
-                                 sm:w-[30%] md:w-[30%] lg:w-[31%] w-full"
+                                 sm:w-[30%] md:w-[30%] lg:w-[353px] w-full"
                             >
                               <Link to="/newPage">
                               <div className="img mx-auto relative">
                                     <img src={item.IMAGE} alt="img" className="rounded-md" />
                                     <div className=" absolute price bottom-1">
-                                        <Link to="/newPage" className="text-white text-[20px] font-semibold    ml-[80px] rounded-md uppercase">Design Edition</Link>
+                                        <Link to="/newPage" className="text-white text-[20px] font-semibold lg:ml-[90px]   ml-[115px] rounded-md uppercase">Design Edition</Link>
                                     </div>
                                 </div>
                               </Link>

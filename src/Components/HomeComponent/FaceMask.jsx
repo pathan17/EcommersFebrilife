@@ -38,7 +38,7 @@ const FaceMask = () => {
 
   return (
     <div>
-      <div className="container mx-auto  mb-5 mt-5 lg:max-w-[1120px]">
+      <div className="container p-1 mx-auto  mb-5 mt-5 lg:max-w-[1120px]">
         <div className="flex flex-col lg:flex-row gap-5">
           {FullSleev.map((item, i) => (
             <Link to="/Price" key={i} className="item w-full lg:w-1/3">
@@ -48,12 +48,12 @@ const FaceMask = () => {
             </Link>
           ))}
           
-          <div className="w-full lg:w-2/3 flex flex-wrap  gap-3 ">
+          <div className="w-full lg:w-2/3 flex flex-wrap  gap-4 ">
             {FullSleevImg.map((item, i) => (
               <Link to="/Price" key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[23%] mx-auto relative">
                 <img src={item.IMG1} alt="" className="w-full" />
                 <div className=" absolute price bottom-[-6px] ">
-                       <Link to="/Price"><h1 className="text-black bg-white px-[30px] py-[1px] ml-8 rounded-md">৳1000</h1></Link>
+                       <Link to="/Price"><h1 className="text-black bg-white px-[30px] py-[1px] lg:ml-[30px] ml-[45px] rounded-md">৳1000</h1></Link>
                 </div>
               </Link>
             ))}

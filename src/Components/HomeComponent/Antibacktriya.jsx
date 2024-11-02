@@ -38,7 +38,7 @@ const Antibacktriya = () => {
 
   return (
     <div>
-      <div className="container mx-auto mt-[20px] lg:max-w-[1120px]">
+      <div className="container p-1 mx-auto mt-[20px] lg:max-w-[1120px]">
         <div className="flex flex-col lg:flex-row gap-5">
           {FullSleev.map((item, i) => (
             <Link to='/Price' key={i} className="item w-full lg:w-1/3">
@@ -52,13 +52,13 @@ const Antibacktriya = () => {
             </Link>
           ))}
 
-          <div className="w-full lg:w-2/3 flex flex-wrap gap-3">
+          <div className="w-full lg:w-2/3 flex flex-wrap gap-4">
             {FullSleevImg.map((item, i) => (
               <Link to='/Price' key={i} className="w-1/2 sm:w-1/3 md:w-[49%] lg:w-[23%] relative mx-auto">
                 <img src={item.IMG1} alt="image" className="rounded-md w-full" />
                 <div className="absolute inset-0 h-full w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
                 <div className=" absolute price bottom-[-6px] ">
-                      <Link to='/Price'> <h1 className="text-black bg-white px-[20px] py-[1px] ml-8 rounded-md">৳1000</h1></Link>
+                      <Link to='/Price'> <h1 className="text-black bg-white px-[20px] py-[1px] lg:ml-[40px] ml-[55px] rounded-md">৳1000</h1></Link>
                 </div>
               </Link>
             ))}

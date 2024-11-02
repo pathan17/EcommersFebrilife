@@ -59,7 +59,7 @@ const HomeFullSleev = () => {
                 <img src={item.IMG1} alt="" className="w-full " />
                 </Link>
                 <div className=" absolute price bottom-[-6px] ">
-                       <Link to="/Price"><h1 className="text-black bg-white px-[30px] py-[1px] ml-4 rounded-md">৳1000</h1></Link>
+                       <Link to="/Price"><h1 className="text-black bg-white px-[30px] py-[1px] lg:ml-[37px] ml-[47px] rounded-md">৳1000</h1></Link>
                 </div>
               </div>
 
