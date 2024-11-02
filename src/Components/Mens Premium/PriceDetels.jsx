@@ -11,7 +11,7 @@ const PriceDetels = () => {
     };
 
     return (
-        <div className="bg-gray-300 w-[500px] mx-auto p-5">
+        <div className="bg-gray-200 w-[500px] mx-auto p-5">
             <div className="container mx-auto flex   flex-col md:flex-row gap-[100px] lg:max-w-[1120px]">
                 <div className="leftImg w-full md:w-[30%] flex flex-col items-center md:items-start">
                     <h1 className="text-black text-[18px] md:text-[28px] lg:text-[20px] font-semibold w-[200px]">Mens Metro Edition Premium Full Sleeve T-shirt - Endless</h1>
@@ -25,7 +25,7 @@ const PriceDetels = () => {
                     </div>
                 </div>
 
-                <div className="rightText w-full md:w-[70%]">
+                <div className="rightText w-full md:w-[70%] ">
                     <div className="text text-center md:text-left h-full flex flex-col justify-between">
                         <div className="mt-10">
                             <p className="mt-4">Choose Size:</p>
