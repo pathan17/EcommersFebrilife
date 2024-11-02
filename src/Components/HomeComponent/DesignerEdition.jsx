@@ -23,7 +23,7 @@ const DesignerEdition = () => {
                               <div className="img mx-auto relative">
                                     <img src={item.IMAGE} alt="img" className="rounded-md" />
                                     <div className=" absolute price bottom-1">
-                                        <Link to="/newPage" className="text-white text-[20px] font-semibold lg:ml-[90px]   ml-[115px] rounded-md uppercase">Design Edition</Link>
+                                        <Link to="/newPage" className="text-white text-[20px] font-semibold lg:ml-[100px]   ml-[115px] rounded-md uppercase">Design Edition</Link>
                                     </div>
                                 </div>
                               </Link>
