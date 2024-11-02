@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MensMetroImg from "../../assets/mensMetro.jpg";
 import { useState } from 'react';
 
@@ -22,9 +23,9 @@ const MensMetro = () => {
         <div className="main mt-5 ">
             <div className="container mx-auto flex flex-col md:flex-row md:gap-0 md:justify-center  gap-1 lg:gap-[40px] lg:max-w-[1120px]">
                 <div className="leftImg w-full md:w-[30%] lg:w-[30%] flex justify-center items-center">
-                    <div className="img h-[500px] w-full lg:h-[520px] md:w-[600px] flex justify-center items-center lg:mt-3">
+                    <Link to="/newPage" className="img h-[500px] w-full lg:h-[520px] md:w-[600px] flex justify-center items-center lg:mt-3">
                         <img src={MensMetroImg} alt="" className="h-full object-cover" />
-                    </div>
+                    </Link>
                 </div>
 
                 <div className="rightText w-full md:w-[70%] lg:w-[70%] flex flex-col items-center md:items-start h-[500px]">
