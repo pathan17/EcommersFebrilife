@@ -11,13 +11,13 @@ const DesignerEdition = () => {
     return (
         <div>
             <div className="container  mx-auto lg:mt-[] lg:max-w-[1120px]">
-                <div className="flex flex-wrap gap-[55px] mt-2 justify-center">
+                <div className="flex flex-wrap gap-[37px] mt-2 justify-center">
                     {
                         designerImg.map((item, i) => (
                             <div
                                 key={i}
                                 className="item bg-white mt-[20px] rounded-md 
-                                 sm:w-[30%] md:w-[30%] lg:w-[29%] w-full"
+                                 sm:w-[30%] md:w-[30%] lg:w-[31%] w-full"
                             >
                               <Link to="/newPage">
                               <div className="img mx-auto relative">

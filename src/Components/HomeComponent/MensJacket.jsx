@@ -42,14 +42,14 @@ const MensJacket = () => {
           {FullSleev.map((item, i) => (
             <Link to="/Price" key={i} className="item w-full lg:w-1/3">
               <div className="img">
-                <img src={item.IMG} alt="img" className="rounded-md h-[378px] lg:h-[310px] sm:h-[255px] sm:w-full md:h-[340px] " />
+                <img src={item.IMG} alt="img" className="rounded-md h-[378px] lg:h-[350px] sm:h-[255px] sm:w-full md:h-[340px] " />
               </div>
             </Link>
           ))}
 
-          <div className="w-full lg:w-2/3 flex flex-wrap gap-3 mx-auto md:flex-wrap ">
+          <div className="w-full lg:w-2/3 flex flex-wrap gap-2 mx-auto md:flex-wrap ">
             {FullSleevImg.map((item, i) => (
-              <Link to="/Price" key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[21%] relative mx-auto">
+              <Link to="/Price" key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[23%] relative mx-auto">
                
                 
                  <div>
@@ -65,11 +65,7 @@ const MensJacket = () => {
             ))}
 
             {/* Add View More text or button after the last image */}
-            <div className=" absolute mt-[220px] text-center w-full ml-[-60px]">
-              <Link className="text-red-600 text-[20px]">
-                View More
-              </Link>
-            </div>
+            
           </div>
         </div>
       </div>

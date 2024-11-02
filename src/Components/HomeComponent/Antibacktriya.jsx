@@ -46,7 +46,7 @@ const Antibacktriya = () => {
                 <img
                   src={item.IMG}
                   alt="img"
-                  className="rounded-md h-[378px] lg:h-[290px] w-full"
+                  className="rounded-md h-[378px] lg:h-[350px] w-full"
                 />
               </div>
             </Link>
@@ -54,7 +54,7 @@ const Antibacktriya = () => {
 
           <div className="w-full lg:w-2/3 flex flex-wrap gap-3">
             {FullSleevImg.map((item, i) => (
-              <Link to='/Price' key={i} className="w-1/2 sm:w-1/3 md:w-[49%] lg:w-1/5 relative mx-auto">
+              <Link to='/Price' key={i} className="w-1/2 sm:w-1/3 md:w-[49%] lg:w-[23%] relative mx-auto">
                 <img src={item.IMG1} alt="image" className="rounded-md w-full" />
                 <div className="absolute inset-0 h-full w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
                 <div className=" absolute price bottom-[-6px] ">

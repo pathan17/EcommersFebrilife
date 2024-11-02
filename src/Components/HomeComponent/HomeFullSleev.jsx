@@ -46,15 +46,15 @@ const HomeFullSleev = () => {
                 <img
                   src={item.IMG}
                   alt="img"
-                  className="rounded-md h-[360px] sm:h-[255px] sm:w-full md:h-[340px] lg:h-[300px] mx-auto"
+                  className="rounded-md h-[360px] sm:h-[255px] sm:w-full md:h-[340px] lg:h-[350px] mx-auto"
                 />
               </div>
             </Link>
           ))}
 
-          <div className="w-full lg:w-2/3 flex flex-wrap gap-3 sm:flex-wrap sm:mx-auto">
+          <div className="w-full lg:w-2/3 flex flex-wrap gap-1 sm:flex-wrap sm:mx-auto">
             {FullSleevImg.map((item, i) => (
-              <div key={i} className="w-1/2 sm:w-[47%] lg:w-[20%] mx-auto relative">
+              <div key={i} className="w-1/2 sm:w-[47%] lg:w-[23%] mx-auto relative">
                 <Link to="/Price">
                 <img src={item.IMG1} alt="" className="w-full " />
                 </Link>
