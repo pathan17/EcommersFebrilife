@@ -10,7 +10,7 @@ const Banner = (props) => {
           <img src={banner} alt="banner" className="w-full lg:h-[380px] sm:h-[300px]" />
         </div>
       </div>
-      <div className="div top-[60px] right-[60px] fixed z-[999] hidden lg:block">
+      <div className="div top-[60px] right-[30px] fixed z-[999] hidden lg:block">
         <ClickFromButton  />
       </div>
     </div>
