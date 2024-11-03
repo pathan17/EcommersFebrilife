@@ -3,7 +3,7 @@ import FrequentlyImg from "../../assets/FreQUENTLY.jpg";
 const Frequently = () => {
     return (
         <div>
-            <div className="Frequently mt-5 ">
+            <div className="Frequently mt-5">
                 <div className="main container mx-auto lg:max-w-[1120px] flex flex-col md:flex-row gap-5">
                     <div className="left w-full md:w-[30%] flex flex-col items-center md:items-start">
                         <div className="text">
@@ -17,30 +17,28 @@ const Frequently = () => {
                             <div className="text w-full md:w-[50%]">
                                 <h1 className="text-black font-semibold text-[17px]">Mens Premium T-Shirt - Hope</h1>
                                 <p className="text-black text-[30px] mt-2">৳ 630.00</p>
-                                <div className="bg mt-4 px-5 w-[140px] py-1 bg-gray-500 text-white flex items-center justify-center cursor-pointer">
+                                <div className="bg mt-4 px-5 w-[140px] py-1 hover:bg-green-600 hover:text-white bg-gray-500 text-white flex items-center justify-center cursor-pointer">
                                     <span>+ Add To Cart</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="right w-full md:w-[70%]">
-                        <div className="div mb-2">
-                            <div className="text flex gap-[10px] md:gap-[60px] bg-gray-500 justify-center items-center">
-                                <h1>Size</h1>
-                                <h1>Chest</h1>
-                                <h1>Round</h1>
-                                <h1>Length</h1>
-                                <h1>Sleeve</h1>
+                        <div className="div mb-1">
+                            <div className="right_Main text flex gap-1 bg-white w-full">
+                                <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">Size</h1>
+                                <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">Chest(Round)</h1>
+                                <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">Length</h1>
+                                <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">Sleeve</h1>
                             </div>
                         </div>
                         {['S', 'M', 'L', 'XL'].map((size) => (
-                            <div className="div mb-2" key={size}>
-                                <div className="text flex gap-[10px] md:gap-[60px] bg-gray-500 justify-center items-center">
-                                    <h1>{size}</h1>
-                                    <h1>39</h1>
-                                    <h1>27.5</h1>
-                                    <h1>8.5</h1>
-                                    <h1>8.5</h1>
+                            <div className="div right_Main_1 mb-1 flex" key={size}>
+                                <div className="text flex w-full bg-white">
+                                    <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">{size}</h1>
+                                    <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">23</h1>
+                                    <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">23</h1>
+                                    <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">23</h1>
                                 </div>
                             </div>
                         ))}
