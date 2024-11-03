@@ -15,12 +15,12 @@ const LoginPage = () => {
   };
   return (
     <div>
-      <div className="flex items-center justify-center h-screen bg-emerald-100">
+      <div className="flex items-center justify-center h-screen bg-blue-400">
         <div className=" p-8  w-full max-w-lg">
-          <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Sign In</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center text-white font-sans uppercase">Sign In</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label className=" block text-gray-700 text-sm font-bold mb-2" >
+              <label className=" block text-white text-sm font-bold mb-2 font-sans" >
                 E-Mail Address
               </label>
               <input
@@ -33,7 +33,7 @@ const LoginPage = () => {
               />
             </div>
             <div className="mb-6">
-              <label className=" block text-gray-700 text-sm font-bold mb-2" >
+              <label className=" block text-white text-sm font-bold mb-2 font-sans" >
                 Password
               </label>
               <input

@@ -42,7 +42,7 @@ const DesignerEdition = () => {
                     <div className="absolute inset-0 h-full w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
                     <div className=" absolute price bottom-[-6px] ">
                       <Link to="/Price">
-                        <h1 className="text-black bg-white px-[15px] py-[1px] lg:ml-[50px] ml-[-8px] rounded-md shadow-lg">
+                        <h1 className="text-black bg-white px-[15px] py-[2px] lg:ml-[50px] ml-[-8px] rounded-md shadow-lg">
                           ৳1000
                         </h1>
                       </Link>

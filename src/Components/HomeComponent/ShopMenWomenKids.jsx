@@ -6,7 +6,7 @@ const ShopMenWomenKids = () => {
         <div>
             <div className="main-shop   sm:mt-2 bg-slate-100 h-[75px] lg:h-[60px] md:h-[100px] sm:mb-[100px] lg:mb-5 lg:mt-[-28px]">
                 <div className="container mx-auto">
-                    <div className="Shop flex flex-col sm:flex-col lg:flex-row gap-4 lg:gap-10 ">
+                    <div className="Shop flex flex-col sm:flex-col lg:flex-row gap-4 lg:gap-[50px] ">
                         <div className="shopNow w-full lg:w-[50%] sm:w-full sm:mx-auto ">
                             <div className="flex justify-between items-center sm:mt-[20px] uppercase font-sans">
                                     <h1 className=" ">Shop Now</h1>

@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="main flex container mx-auto ">
           <Link to="/" className="logo w-[30%]">
             <div className="log  w-[180px]  flex gap-[10px]  lg:gap-16">
-              <div className="icon lg:hidden">
+              <div className="icon md:hidden   ">
                 {sidebarOpen ? (
 
                   <VscChromeClose
@@ -52,7 +52,7 @@ const Navbar = () => {
                 )}
               </div>
               <img src={Img} alt="Logo" className="w-full h-[80px] ml-3" />
-             {/* Shop--hover--option--start */}
+              {/* Shop--hover--option--start */}
               <div className="relative group">
                 <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-7 text-black font-bold text-[18px] mt-0 hover:text-blue-600 ">
                   Shop <IoIosArrowDown className=" lg:mt-1 " />
@@ -276,7 +276,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-             {/* Shop--hover--option--End */}
+              {/* Shop--hover--option--End */}
 
             </div>
           </Link>
@@ -303,68 +303,74 @@ const Navbar = () => {
                 </div>
               </div>
           }
-           {/* search for searchOption input fild--END */}
-           {/* INPUT FILD START */}
-           <div className="input w-[60%] md:ml-8 lg:p-4 justify-center items-center hidden  lg:block">
-                <div className="input-field ">
-                  <div className=" relative  p-3  w-[380px]  lg:w-[600px]   z-[999]">
-                    <input
-                      type="text"
-                      className="py-1 px-4 text-blue-600  border border-gray-600 focus:outline-none focus:border-blue-500 text-left w-full"
-                      placeholder="Search by product"
-                    />
-                    <FaSearch  className="absolute right-7 top-1/2 transform -translate-y-1/2 text-gray-600" />
-                  </div>
-                </div>
+          {/* search for searchOption input fild--END */}
+          {/* INPUT FILD START */}
+          <div className="input w-[60%] md:ml-8 lg:p-4 justify-center items-center hidden  lg:block">
+            <div className="input-field ">
+              <div className=" relative  p-3  w-[380px]  lg:w-[600px]   z-[999]">
+                <input
+                  type="text"
+                  className="py-1 px-4 text-blue-600  border border-gray-600 focus:outline-none focus:border-blue-500 text-left w-full"
+                  placeholder="Search by product"
+                />
+                <FaSearch className="absolute right-7 top-1/2 transform -translate-y-1/2 text-gray-600" />
               </div>
-           {/* INPUT FILD END */}
-
-             {/* Navbar--AdCart--Icon--start */}
-          <div className="icon  gap-[2px] ml-[20px] mt-6 static flex lg:ml-[-60px]  lg:flex lg:mt-7  ">
-            <FaCartShopping className=" text-[23px] mt-1 " />
-            <h3 className=" bg-blue-600 rounded-md h-4 w-4  flex items-center justify-center text-white text-[10px] mt-2 font-bold mr-[10px]">
-              0
-            </h3>
-            <div className="icon mr-[30px]">
-              {
-                loginVisible?
-                <FaAngleDown onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500 lg:hidden" />
-                :
-                <FaAngleUp  onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500  lg:hidden" />
-
-              }
-
             </div>
-             {/* Navbar--AdCart--Icon--End */}
-
-            {/* FaAngleDown click stape */}
-              {
-                loginVisible?
-                <div className="LoginSaidbar absolute p-2 bg-gray-400 ml-[-145px] mt-[48px] lg:hidden z-50">
-                <div className="   w-[50%] h-[50%] z-[999] place-content-center ">
-                  <div className="login flex gap-5 mb-2">
-                    <div className="text">
-                      <Link to="/" className=" text-lg text-white font-bold" >Login</Link>
-                      <p className=" w-[200px] text-gray-300">Enter your account</p>
-                    </div>
-                    <div className="icon mt-3 text-lg text-white"><FaAngleRight /></div>
-                  </div>
-                    <div className="line h-[1px] w-[260px] bg-white  mb-2"></div>
-                  <div className="login flex gap-5">
-                    <div className="text">
-                      <Link to="/" className=" text-lg text-blue-500 font-bold" >Track Order</Link>
-                      <p className=" w-[200px] text-gray-300">Know your order status</p>
-                    </div>
-                    <div className="icon mt-3 text-lg text-blue-500"><FaAngleRight /></div>
-                  </div>
-                </div>
-              </div>
-              :
-              ``
-              }
-               
-            {/* FaAngleDown click stape */}
           </div>
+          {/* INPUT FILD END */}
+
+          {/* Navbar--AdCart--Icon--start */}
+         
+            <div className="icon  gap-[2px] ml-[20px] mt-6 static flex lg:ml-[-60px]  lg:flex lg:mt-7  cursor-pointer">
+            <Link to="/newPage">
+              <FaCartShopping className=" text-[23px] mt-1 cursor-pointer " />
+              </Link>
+              <h3 className=" bg-blue-600 rounded-md h-4 w-4  flex items-center justify-center text-white text-[10px] mt-2 font-bold mr-[10px]">
+                0
+              </h3>
+              
+              <div className="icon mr-[30px]">
+                {
+                  loginVisible ?
+                    <FaAngleDown onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500 lg:hidden" />
+                    :
+                    <FaAngleUp onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500  lg:hidden" />
+
+                }
+
+              </div>
+              
+              {/* Navbar--AdCart--Icon--End */}
+
+              {/* FaAngleDown click stape */}
+              {
+                loginVisible ?
+                  <div className="LoginSaidbar absolute p-2 bg-gray-400 ml-[-145px] mt-[48px] lg:hidden z-50">
+                    <div className="   w-[50%] h-[50%] z-[999] place-content-center ">
+                      <div className="login flex gap-5 mb-2">
+                        <div className="text">
+                          <Link to="/" className=" text-lg text-white font-bold" >Login</Link>
+                          <p className=" w-[200px] text-gray-300">Enter your account</p>
+                        </div>
+                        <div className="icon mt-3 text-lg text-white"><FaAngleRight /></div>
+                      </div>
+                      <div className="line h-[1px] w-[260px] bg-white  mb-2"></div>
+                      <div className="login flex gap-5">
+                        <div className="text">
+                          <Link to="/" className=" text-lg text-blue-500 font-bold" >Track Order</Link>
+                          <p className=" w-[200px] text-gray-300">Know your order status</p>
+                        </div>
+                        <div className="icon mt-3 text-lg text-blue-500"><FaAngleRight /></div>
+                      </div>
+                    </div>
+                  </div>
+                  :
+                  ``
+              }
+
+              {/* FaAngleDown click stape */}
+            </div>
+         
         </div>
         {/* Sidebar */}
         {sidebarOpen && (
