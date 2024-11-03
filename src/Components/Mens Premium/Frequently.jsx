@@ -34,7 +34,7 @@ const Frequently = () => {
                         </div>
                         {['S', 'M', 'L', 'XL'].map((size) => (
                             <div className="div right_Main_1 mb-1 flex" key={size}>
-                                <div className="text flex w-full bg-white">
+                                <div className="text flex w-full bg-white gap-1">
                                     <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">{size}</h1>
                                     <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">23</h1>
                                     <h1 className="bg-gray-100 text-black font-semibold w-[25%] text-center py-1">23</h1>
