@@ -67,7 +67,7 @@ const ScrollPages = () => {
                             {isOpen ? <FaMinus /> : <FaPlus />}
                         </div>
                         {isOpen && (
-                            <div className="ml-5">
+                            <div className="ml-5 hidden md:block">
                                 {items.map((item) => (
                                     <div key={item} className="text-[18px] text-black font-bold opacity-80 capitalize">
                                         <div onClick={() => { handleItemClick(item); toggleSubItems(item); }} className="flex justify-between cursor-pointer">
@@ -109,8 +109,6 @@ const ScrollPages = () => {
                             </div>
                         )}
 
-
-
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-4 lg:mt-10">
                             {ImgItems.map((item, i) => (
                                 <div key={i} className="item text-center relative">
@@ -141,11 +139,6 @@ const ScrollPages = () => {
                           )
                          }
                         </div>
-
-
-
-
-
                     </div>
                 </div>
             </div>

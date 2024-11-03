@@ -234,7 +234,7 @@ const Navbar = () => {
                     <ul>
                       <li className="text-black font-bold text-lg">
                         {" "}
-                        <Link to="">Sports</Link>{" "}
+                        <Link to="/newPage">Sports</Link>{" "}
                       </li>
                       <li className="text-black">
                         {" "}
@@ -268,7 +268,7 @@ const Navbar = () => {
                       </li>
                       <li className="text-black">
                         {" "}
-                        <Link >
+                        <Link to="/newPage" >
                           Socks
                         </Link>{" "}
                       </li>
@@ -386,7 +386,7 @@ const Navbar = () => {
               {navLinks.map((link, index) => (
                 <li key={index} className="py-2 w-full">
                   <NavLink
-                    to={link.path}
+                    to={"/newPage"}
                     className=" p-2 w-full block text-black transition-colors duration-300 rounded-md"
                     activeClassName=""
                   >
