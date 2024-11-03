@@ -95,8 +95,8 @@ const MensMetro = (props) => {
 
             </div>
             {/* clickFrom--button--start */}
-            <div className=" fixed top-0 right-[40px] z-[999]">
-                <ClickFromButton />
+            <div className=" fixed top-0 right-[40px] z-[999] overflow-hidden">
+                <ClickFromButton  />
             </div>
             {/* clickFrom--button--end */}
             {/* addCart---start--- */}

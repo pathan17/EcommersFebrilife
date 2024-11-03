@@ -307,7 +307,7 @@ const Navbar = () => {
           {/* INPUT FILD START */}
           <div className="input w-[60%] md:ml-8 lg:p-4 justify-center items-center hidden  lg:block">
             <div className="input-field ">
-              <div className=" relative  p-3  w-[380px]  lg:w-[600px]   z-[999]">
+              <div className=" relative  p-3  w-[380px]  lg:w-[600px] ">
                 <input
                   type="text"
                   className="py-1 px-4 text-blue-600  border border-gray-600 focus:outline-none focus:border-blue-500 text-left w-full"

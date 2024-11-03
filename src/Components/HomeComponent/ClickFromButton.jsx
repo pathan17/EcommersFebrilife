@@ -40,7 +40,7 @@ const ClickFromButton = () => {
 
             {
                 isFormVisible && (
-                    <div className="div"> 
+                    <div className="div z-[999]"> 
                         <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md w-[100%]">
                             <div onClick={() => setIsFormVisible(!isFormVisible)} className="close ml-[230px] mt-[-15px] text-blue-500"><FaAngleDown className="text-[30px]" /></div>
                             <div className="text-center">
