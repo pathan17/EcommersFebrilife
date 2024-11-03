@@ -123,7 +123,7 @@ const ScrollPages = () => {
 
 
                                         <button onClick={() => setAdCart(!adCart)} className="icon flex items-center justify-center gap-4 bg-black p-1 w-full hover:bg-green-500 hover:text-white transition-all">
-                                            <FaCartPlus className="text-white" />
+                                            <FaCartPlus className="text-white " />
                                             <h1 className="capitalize text-[15px] text-white">Buy Now</h1>
                                         </button>
 
