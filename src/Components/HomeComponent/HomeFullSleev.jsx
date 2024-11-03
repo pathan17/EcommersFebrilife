@@ -47,7 +47,7 @@ const HomeFullSleev = () => {
                 <img
                   src={item.IMG}
                   alt="img"
-                  className="rounded-md h-[360px] sm:h-[255px] sm:w-full md:h-[340px] lg:h-[350px] mx-auto"
+                  className=" h-[360px] sm:h-[255px] sm:w-full md:h-[340px] lg:h-[350px] mx-auto"
                 />
               </div>
             </div>

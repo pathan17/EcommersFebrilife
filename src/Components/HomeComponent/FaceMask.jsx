@@ -43,7 +43,7 @@ const FaceMask = () => {
           {FullSleev.map((item, i) => (
             <Link to="/Price" key={i} className="item w-full lg:w-1/3">
               <div className="img">
-                <img src={item.IMG} alt="img" className="rounded-md h-[378px] lg:h-[340px] w-full sm:h-[255px] md:h-[340px]" />
+                <img src={item.IMG} alt="img" className=" h-[378px] lg:h-[340px] w-full sm:h-[255px] md:h-[340px]" />
               </div>
             </Link>
           ))}
