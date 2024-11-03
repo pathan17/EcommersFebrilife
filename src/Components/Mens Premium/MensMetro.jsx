@@ -95,12 +95,12 @@ const MensMetro = (props) => {
 
             </div>
             {/* clickFrom--button--start */}
-            <div className=" fixed top-0 right-[70px] z-[999]">
+            <div className=" fixed top-0 right-[40px] z-[999]">
                 <ClickFromButton />
             </div>
             {/* clickFrom--button--end */}
             {/* addCart---start--- */}
-            <div className=" static   z-[999]">
+            <div className=" static z-[999]">
                 <AdCart />
             </div>
             {/* addCart---end--- */}
