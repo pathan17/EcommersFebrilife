@@ -5,12 +5,12 @@ import ClickFromButton from "./ClickFromButton";
 const Banner = (props) => {
   return (
     <div>
-      <div className="banner-main  static mt-[-20px] lg:mt-[-150px]">
-        <div className="banner sm:mt-[100px] ">
-          <img src={banner} alt="banner" className="w-full sm:h-[300px]" />
+      <div className="banner-main  lg:py-10 static mt-[-20px] lg:mt-[-150px]">
+        <div className="banner sm:mt-[100px]">
+          <img src={banner} alt="banner" className="w-full lg:h-[380px] sm:h-[300px]" />
         </div>
       </div>
-      <div className="div top-0 right-0 fixed z-[999] hidden lg:block">
+      <div className="div top-[60px] right-[60px] fixed z-[999] hidden lg:block">
         <ClickFromButton  />
       </div>
     </div>
