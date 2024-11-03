@@ -66,7 +66,7 @@ const NewArrivalTshirt = () => {
                 className="item bg-white rounded-md w-[45%] xs:w-[30%] sm:w-[30%] md:w-[23%] lg:w-[15%]"
               >
                 <div className="flex justify-center items-center">
-                  <h1 className="text-center bg-white w-[100px] text-black rounded-lg shadow-lg z-50">
+                  <h1 className="text-center bg-white w-[100px] text-black rounded-lg shadow-lg z-50 font-sans py-1">
                     <Link to="/newPage">Sports T-shirt</Link>
                   </h1>
                 </div>

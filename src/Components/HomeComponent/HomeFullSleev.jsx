@@ -66,7 +66,7 @@ const HomeFullSleev = () => {
 
                 <div className=" absolute price bottom-[-6px] ">
                   <Link to="/Price">
-                    <h1 className="text-black bg-white px-[30px] py-[1px] lg:ml-[37px] ml-[47px] rounded-md shadow-lg">
+                    <h1 className="text-black bg-white px-[30px] py-[2px] lg:ml-[37px] ml-[47px] rounded-md shadow-lg">
                       ৳1000
                     </h1>
                   </Link>
