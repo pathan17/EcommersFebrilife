@@ -71,6 +71,7 @@ const HomeFullSleev = () => {
                     </h1>
                   </Link>
                 </div>
+                <Link to="/newPage">  
                 {i === FullSleevImg.length - 1 && (
                   
                   <h1 className="absolute top-[30px] left-1/2 transform -translate-x-1/2 text-white text-[25px]  px-4 py-2 rounded-md z-10 uppercase font-semibold">
@@ -80,6 +81,7 @@ const HomeFullSleev = () => {
                   </h1>
                  
                 )}
+                </Link>
               </div>
 
             ))}
