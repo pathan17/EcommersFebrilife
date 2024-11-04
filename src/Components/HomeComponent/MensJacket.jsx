@@ -37,7 +37,7 @@ const MensJacket = () => {
 
   return (
     <div>
-      <div className="container p-1 px-3  mx-auto mt-[80px] lg:max-w-[1120px]">
+      <div className="container p-1 px-3 md:px-[40px] lg:px-[10px]  mx-auto mt-[80px] lg:max-w-[1120px]">
         <div className="flex flex-col lg:flex-row gap-5">
           {FullSleev.map((item, i) => (
             <Link to="/Price" key={i} className="item w-full lg:w-1/3">

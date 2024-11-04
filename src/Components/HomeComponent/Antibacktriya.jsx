@@ -22,7 +22,7 @@ const Antibacktriya = () => {
 
   return (
     <div>
-      <div className="container p-1 px-3 mx-auto mt-[20px] lg:max-w-[1120px]">
+      <div className="container p-1 px-3 md:px-[40px] lg:px-[5px] mx-auto mt-[20px] lg:max-w-[1120px]">
       <Link to="/newPage">  
         <div className="flex flex-col lg:flex-row gap-5">
         

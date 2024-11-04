@@ -38,7 +38,7 @@ const HomeFullSleev = () => {
 
   return (
     <div>
-      <div className="mb-5  mt-5  container mx-auto lg:max-w-[1120px]">
+      <div className="mb-5 md:px-[40px] lg:px-[10px] mt-5  container mx-auto lg:max-w-[1120px]">
         <Link to="/Price">  
         <div className="flex flex-col lg:flex-row gap-5">
           {FullSleev.map((item, i) => (

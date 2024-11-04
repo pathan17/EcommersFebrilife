@@ -12,7 +12,7 @@ const bulkOrderImage = [
 
 const BlukOrderImg = () => {
     return (
-        <div className=' px-3'>
+        <div className=' px-3 md:px-[40px]'>
             <div className="main p-4 container mx-auto lg:max-w-[1120px] mb-10 mt-[40px] bg-slate-300 ">
                 <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-[500px]">
                     <div className="text w-full lg:w-[70%]">

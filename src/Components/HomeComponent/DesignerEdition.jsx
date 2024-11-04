@@ -10,18 +10,18 @@ const DesignerEdition = () => {
 
     return (
         <div>
-            <div className="container p-1 px-3 mx-auto lg:mt-[] lg:max-w-[1120px]">
-                <div className="flex flex-wrap gap-[18px] mt-2 justify-center">
+            <div className="container p-1 px-3  lg:px-0  mx-auto  lg:max-w-[1120px]">
+                <div className="flex flex-wrap gap-[18px]   mt-2 justify-center">
                     {
                         designerImg.map((item, i) => (
                             <div
                                 key={i}
                                 className="item bg-white mt-[20px] rounded-md 
-                                 sm:w-[30%] md:w-[30%] lg:w-[353px] w-full"
+                                 sm:w-[30%] md:w-[10%] lg:w-[353px] w-full"
                             >
                               <Link to="/newPage">
                               <div className="img mx-auto relative">
-                                    <img src={item.IMAGE} alt="img" className="" />
+                                    <img src={item.IMAGE} alt="img" className=" w-full" />
                                     <div className=" absolute price bottom-1">
                                         <Link to="/newPage" className="text-white text-[20px] font-semibold lg:ml-[100px]   ml-[115px] rounded-md uppercase hover:text-red-500 transition-all">Design Edition</Link>
                                     </div>
