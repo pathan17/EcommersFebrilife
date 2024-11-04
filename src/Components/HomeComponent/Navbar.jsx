@@ -360,10 +360,10 @@ const Navbar = () => {
                       </div>
                       <div className="line h-[1px] w-[260px] bg-white  mb-2"></div>
                       <div className="login flex gap-5">
-                        <div className="text">
-                          <Link to="/" className=" text-lg text-blue-500 font-bold" >Track Order</Link>
+                        <Link to="/Order" className="text cursor-pointer">
+                          <div  className=" text-lg text-blue-500 font-bold" >Track Order</div>
                           <p className=" w-[200px] text-gray-300">Know your order status</p>
-                        </div>
+                        </Link>
                         <div className="icon mt-3 text-lg text-blue-500"><FaAngleRight /></div>
                       </div>
                     </div>
