@@ -40,7 +40,7 @@ const TrackOrder = () => {
                 </div>
             </div>
             <div className=" "> <Footer/> </div>
-            <div className="  top-[40px] right-[50px] fixed"> <ClickFromButton/> </div>
+            <div className="top-[40px] right-[50px] fixed"> <ClickFromButton/> </div>
         </div>
     );
 };
