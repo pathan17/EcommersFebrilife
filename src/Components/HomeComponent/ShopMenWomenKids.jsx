@@ -16,7 +16,7 @@ const ShopMenWomenKids = () => {
                               
                             </div>
                         </div>
-                        <div className="shopNow w-full lg:w-[50%] sm:mx-auto bg-slate-100 p-3 lg:p-0 lg:bg-inherit lg:mt-[12px] md:w-full">
+                        <div className="shopNow w-full lg:w-[50%] sm:mx-auto bg-slate-100 p-3 lg:p-0 lg:bg-inherit lg:mt-[12px] md:w-full hover:text-red-600">
                             <div className="Icon flex flex-col sm:flex-row gap-2 sm:gap-1 lg:gap-5  justify-center items-center">
                                 <div className="text">
                                     <h1 className=" font-sans ">GET 5% OFF ON APP</h1>
@@ -28,7 +28,7 @@ const ShopMenWomenKids = () => {
                                     </span>
                                 </div>
                                 <div className="text">
-                                    <div className="flex justify-center items-center px-4 bg-black rounded-md ">
+                                    <div className="flex justify-center items-center px-4 bg-black rounded-md  ">
                                         <FaApple className="text-white" />
                                         <span className="inline-block text-white lg:ml-4">
                                             <p className="text-[10px]">GET IT ON</p> App Store

@@ -38,7 +38,7 @@ const FaceMask = () => {
 
   return (
     <div>
-      <div className="container p-1 mx-auto  mb-5 mt-5 lg:max-w-[1120px]">
+      <div className="container p-1 px-3 mx-auto  mb-5 mt-5 lg:max-w-[1120px]">
         <div className="flex flex-col lg:flex-row gap-5">
           {FullSleev.map((item, i) => (
             <Link to="/Price" key={i} className="item w-full lg:w-1/3">

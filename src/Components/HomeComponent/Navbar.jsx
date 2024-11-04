@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
 import { VscChromeClose } from "react-icons/vsc";
-import { useState } from "react";
+import {  useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
@@ -29,6 +29,9 @@ const Navbar = () => {
 
 
   ];
+
+  
+ 
 
   return (
     <div>
@@ -328,16 +331,17 @@ const Navbar = () => {
               <h3 className=" bg-blue-600 rounded-md h-4 w-4  flex items-center justify-center text-white text-[10px] mt-2 font-bold mr-[10px]">
                 0
               </h3>
-              
-              <div className="icon mr-[30px]">
+            
+              <div className=" icon mr-[30px] md:hidden   lg:block">
+                
                 {
                   loginVisible ?
-                    <FaAngleDown onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500 lg:hidden" />
+                    <FaAngleDown onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500 lg:text-black " />
                     :
-                    <FaAngleUp onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500  lg:hidden" />
+                    <FaAngleUp onClick={() => setLoginVisible(!loginVisible)} className="text-2xl text-blue-500 lg:text-black "  />
 
                 }
-
+               
               </div>
               
               {/* Navbar--AdCart--Icon--End */}
@@ -345,11 +349,11 @@ const Navbar = () => {
               {/* FaAngleDown click stape */}
               {
                 loginVisible ?
-                  <div className="LoginSaidbar absolute p-2 bg-gray-400 ml-[-145px] mt-[48px] lg:hidden z-50">
+                  <div className="LoginSaidbar absolute p-2 bg-gray-400 ml-[-145px] mt-[48px]  z-50">
                     <div className="   w-[50%] h-[50%] z-[999] place-content-center ">
                       <div className="login flex gap-5 mb-2">
                         <div className="text">
-                          <Link to="/" className=" text-lg text-white font-bold" >Login</Link>
+                          <Link to="/path" className=" text-lg text-white font-bold" >Login</Link>
                           <p className=" w-[200px] text-gray-300">Enter your account</p>
                         </div>
                         <div className="icon mt-3 text-lg text-white"><FaAngleRight /></div>
@@ -367,6 +371,8 @@ const Navbar = () => {
                   :
                   ``
               }
+             
+
 
               {/* FaAngleDown click stape */}
             </div>
