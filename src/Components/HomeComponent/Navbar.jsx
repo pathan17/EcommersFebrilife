@@ -56,12 +56,12 @@ const Navbar = () => {
               </div>
               <img src={Img} alt="Logo" className="w-full h-[80px] ml-3" />
               {/* Shop--hover--option--start */}
-              <div className="relative group">
-                <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-7 text-black font-bold text-[18px] mt-0 hover:text-blue-600 ">
+              <div className="relative group z-[999]">
+                <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-7 text-black font-bold text-[18px] mt-0 hover:text-blue-600 z-50 ">
                   Shop <IoIosArrowDown className=" lg:mt-1 " />
                 </h2>
-                <div className="menu bg-white  p-6 absolute hidden group-hover:block w-[800px] z-[999] overflow-hidden">
-                  <div className="div flex flex-row h-[310px] gap-10 ] ">
+                <div className="menu bg-white  p-6 absolute hidden group-hover:block w-[800px] z-[999] ">
+                  <div className="div flex flex-row h-[310px] gap-15 ] ">
                     <ul className="flex flex-col">
                       <li className="text-black font-bold z-[999]  text-lg">
                         <Link to="/newPage">
@@ -381,7 +381,7 @@ const Navbar = () => {
         {/* Sidebar */}
         {sidebarOpen && (
           <div
-            className={` z-auto fixed top-0 left-0 h-full w-64 bg-white text-red-600 p-4 transition-transform duration-300 ${sidebarOpen ? "translate-x-0" : "translate-x-full"
+            className={` z-[999] fixed top-0 left-0 h-full w-64 bg-white text-red-600 p-4 transition-transform duration-300 ${sidebarOpen ? "translate-x-0" : "translate-x-full"
               }`}
           >
             {/* Close Button with Background */}
