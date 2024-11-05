@@ -8,14 +8,14 @@ import ClickFromButton from "../HomeComponent/ClickFromButton";
 const MensMetro = (props) => {
     const [activeSize, setActiveSize] = useState(null);
     const sizes = ['S', 'M', 'L', 'XL'];
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(0);
 
     const increaseQuantity = () => {
         setQuantity((prevQuantity) => prevQuantity + 1);
     };
 
     const decreaseQuantity = () => {
-        setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+        setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 0));
     };
 
     const handleAddToCart = () => {
