@@ -381,11 +381,11 @@ const Navbar = () => {
         {/* Sidebar */}
         {sidebarOpen && (
           <div
-            className={` z-[999] fixed top-0 left-0 h-full w-64 bg-white text-red-600 p-4 transition-transform duration-300 ${sidebarOpen ? "translate-x-0" : "translate-x-full"
+            className={` z-[999]  fixed top-0 left-0 h-full w-64 bg-white text-red-600 p-4 transition-all duration-300 ${sidebarOpen ? "translate-x-0" : "translate-x-full"
               }`}
           >
             {/* Close Button with Background */}
-            <div className="flex justify-end">
+            <div className="flex justify-end transition-all">
               <VscChromeClose
                 onClick={() => setSidebarOpen(false)}
                 className="bg-white text-black text-3xl cursor-pointer p-1 rounded-full"
