@@ -41,7 +41,7 @@ const FaceMask = () => {
       <div className="container p-1 px-3 md:px-[40px] lg:px-[10px] mx-auto  mb-5 mt-5 lg:max-w-[1120px]">
         <div className="flex flex-col lg:flex-row gap-5">
           {FullSleev.map((item, i) => (
-            <Link to="/Price" key={i} className="item w-full lg:w-1/3">
+            <Link to="/Price" key={i} className="item w-full lg:w-[39%]">
               <div className="img">
                 <img src={item.IMG} alt="img" className=" h-[378px] lg:h-[340px] w-full sm:h-[255px] md:h-[340px]" />
               </div>
@@ -55,7 +55,7 @@ const FaceMask = () => {
                 {i === FullSleevImg.length - 1 && (
                   <div className="absolute inset-0 h-full w-full bg-black opacity-40"></div>
                 )}
-                <div className="absolute inset-0 h-full w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 h-[158px] w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
                 <div className=" absolute price bottom-[-6px] ">
                   <Link to="/Price">
                     <h1 className="text-black bg-white px-[30px] py-[2px] lg:ml-[30px] ml-[45px] rounded-md shadow-lg">

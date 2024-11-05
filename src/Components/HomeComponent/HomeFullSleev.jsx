@@ -42,7 +42,7 @@ const HomeFullSleev = () => {
         <div>
           <div className="flex flex-col lg:flex-row gap-5">
             {FullSleev.map((item, i) => (
-              <Link to="/Price" key={i} className="item w-full lg:w-1/3 sm:hidden lg:block">
+              <Link to="/Price" key={i} className="item w-full lg:w-[39%] sm:hidden lg:block">
                 <div className="img w-full ">
                   <img
                     src={item.IMG}
@@ -58,9 +58,9 @@ const HomeFullSleev = () => {
               <Link to="/Price" key={i} className="w-1/2 sm:w-[48%] md:w-[49%] lg:w-[23%] mx-auto relative">
                 <img src={item.IMG1} alt="" className="w-full" />
                 {i === FullSleevImg.length - 1 && (
-                  <div className="absolute inset-0 h-full w-full bg-black opacity-40"></div>
+                  <div className="absolute inset-0 h-[158px] w-full bg-black opacity-40"></div>
                 )}
-                <div className="absolute inset-0 h-full w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 h-[158px]  w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
                 <div className=" absolute price bottom-[-6px] ">
                   <Link to="/Price">
                     <h1 className="text-black bg-white px-[30px] py-[2px] lg:ml-[30px] ml-[45px] rounded-md shadow-lg">

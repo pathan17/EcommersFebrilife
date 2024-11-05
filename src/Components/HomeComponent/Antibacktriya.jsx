@@ -27,7 +27,7 @@ const Antibacktriya = () => {
         <div className="flex flex-col lg:flex-row gap-5">
         
           {FullSleev.map((item, i) => (
-            <div key={i} className="item w-full lg:w-1/3">
+            <div key={i} className="item w-full lg:w-[39%]">
               <div className="img">
                 <img
                   src={item.IMG}
