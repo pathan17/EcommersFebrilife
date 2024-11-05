@@ -19,7 +19,7 @@ const LoginPage = () => {
   return (
     <div className=" ">
        <HadLine/>
-       <div className="">
+       <div className="  lg:top-0 lg:left-0 lg:w-full lg:sticky z-[999] ">
        <Navbar />
        </div>
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-r bg-white to-gray-900">

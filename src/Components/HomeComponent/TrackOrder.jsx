@@ -10,7 +10,9 @@ const TrackOrder = () => {
     return (
         <div className="div ">
             <div> <HadLine /> </div>
-            <div> <Navbar /> </div>
+            <div className="  lg:top-0 lg:left-0 lg:w-full lg:sticky z-[999] ">
+                <Navbar />
+            </div>
             <div className=" flex items-center min-h-screen justify-center ">
                 <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-md relative">
                     <h1 className="text-2xl font-bold mb-10 text-center text-gray-800">Track Your Order</h1>
@@ -39,8 +41,8 @@ const TrackOrder = () => {
                     </div>
                 </div>
             </div>
-            <div className=" "> <Footer/> </div>
-            <div className="top-[40px] right-[50px] fixed"> <ClickFromButton/> </div>
+            <div className=" "> <Footer /> </div>
+            <div className="top-[40px] right-[50px] fixed"> <ClickFromButton /> </div>
         </div>
     );
 };
