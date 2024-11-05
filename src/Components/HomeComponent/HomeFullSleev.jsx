@@ -71,7 +71,7 @@ const HomeFullSleev = () => {
                 </div>
                 {i === FullSleevImg.length - 1 && (
 
-                  <h1 className="absolute top-[30px] left-1/2 transform -translate-x-1/2 text-white text-[25px]  px-4 py-2 rounded-md z-10 uppercase font-semibold">
+                  <h1 className="absolute top-[30px] left-1/2 transform -translate-x-1/2 text-white text-[20px]  px-4 py-2 rounded-md z-10 uppercase font-light">
 
                     View More
 
