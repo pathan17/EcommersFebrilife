@@ -17,6 +17,7 @@ import Navbar from "../Components/HomeComponent/Navbar";
 import Banner from "../Components/HomeComponent/Banner";
 import HadLine from "../Components/HomeComponent/HadLine";
 import Footer from "../Components/HomeComponent/Footer";
+import NewArrivalTshirt from './../Components/HomeComponent/NewArrivalTshirt';
 
 
 
@@ -51,8 +52,12 @@ function App() {
       {/* NEEW----ARRIVAL----START*/}
         <NewArriVal/> 
       {/* NEEW----ARRIVAL----END*/}
-
+        
+         {/* NewArrival----Tshirt--start */}
+          <NewArrivalTshirt/>
+          {/* NewArrival----Tshirt--End */}
       {/* Img----Designer Edition----START*/}
+
        <DesignerEdition/> 
       {/* Img----Designer Edition----END*/}
 

@@ -4,7 +4,7 @@ import { FaApple } from "react-icons/fa";
 const ShopMenWomenKids = () => {
     return (
         <div>
-            <div className="main-shop md:px-[40px] px-4 sm:mt-2 bg-slate-100 h-[75px] lg:h-[60px] md:h-[100px] sm:mb-[100px] lg:mb-5 lg:mt-[-28px]">
+            <div className="main-shop md:px-[40px] px-4 sm:mt-2 bg-slate-100 h-[75px] lg:h-[60px] md:h-[100px] sm:mb-[100px]  lg:mt-[-28px]">
                 <div className="container mx-auto">
                     <div className="Shop flex flex-col sm:flex-col lg:flex-row gap-3 lg:gap-[60px]">
                         <div className="shopNow w-full lg:w-[50%] sm:w-full md:w-[30%] sm:mx-auto ">

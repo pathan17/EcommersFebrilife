@@ -13,8 +13,8 @@ const bulkOrderImage = [
 const BlukOrderImg = () => {
     return (
         <div className=' px-3 md:px-[40px]'>
-            <div className="main  container mx-auto lg:max-w-[1120px] mb-10 mt-[40px] bg-slate-300 p-5 ">
-                <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-[500px]">
+            <div className="main  container mx-auto lg:max-w-[1120px] mb-10 mt-[40px] bg-slate-300  ">
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-[500px] p-6">
                     <div className="text w-full lg:w-[70%]">
                         <h1 className='flex text-[24px] sm:text-[28px] md:text-[30px] text-blue-400 gap-1'>
                             Bulk Order / Wholesale <FaChevronRight className='mt-2 text-[16px] sm:text-[20px]' />

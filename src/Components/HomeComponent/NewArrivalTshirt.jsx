@@ -56,10 +56,10 @@ const NewArrivalTshirt = () => {
     },
   ];
   return (
-    <div>
+    <div className=" ">
       <div className="container mx-auto lg:max-w-[1120px]">
         <div className="">
-          <div className="items flex flex-wrap gap-[21px] mt-[40px] justify-center items-center ">
+          <div className="items flex flex-wrap gap-[17px] mt-[40px] justify-center items-center ">
             {LinkImag.map((item, i) => (
               <div
                 key={i}
