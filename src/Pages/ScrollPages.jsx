@@ -8,6 +8,7 @@ import ClickFromButton from "../Components/HomeComponent/ClickFromButton";
 import AdCart from "../Components/HomeComponent/AdCart";
 import PriceDetels from "../Components/Mens Premium/PriceDetels";
 import { Link } from "react-router-dom";
+import Footer from "../Components/HomeComponent/Footer";
 
 
 const ScrollPages = () => {
@@ -56,104 +57,108 @@ const ScrollPages = () => {
     const [adCart, setAdCart] = useState(false)
 
     return (
-        <div className="relative">
-            <div className="bg-slate-50">
-                <HadLine />
-                <Navbar />
-                <div className="container mx-auto flex flex-col md:flex-row gap-5 lg:gap-[80px] p-5">
-                    <div className="scrollbar w-full md:w-[30%] max-h-[500px] overflow-y-auto">
-                        <div className="flex justify-between items-center mt-5 hidden md:block md:flex md:justify-between lg:flex" onClick={toggleItems}>
-                            <h1 className="text-[25px] text-black font-bold capitalize ">New Arrival</h1>
-                            {isOpen ? <FaMinus /> : <FaPlus />}
-                        </div>
-                        {isOpen && (
-                            <div className="ml-5 hidden md:block">
-                                {items.map((item) => (
-                                    <div key={item} className="text-[18px] text-black font-bold opacity-80 capitalize">
-                                        <div onClick={() => { handleItemClick(item); toggleSubItems(item); }} className="flex justify-between cursor-pointer">
-                                            <p>{item}</p>
-                                            {subItemOpen === item ? <FaMinus /> : <FaPlus />}
-                                        </div>
-                                        {subItemOpen === item && (
-                                            <div className="sub-items ml-5">
-                                                {subItems.map((subItem) => (
-                                                    <p key={subItem} className="text-[15px] text-black opacity-60 capitalize cursor-pointer">
-                                                        {subItem}
-                                                    </p>
-                                                ))}
+        <div>
+            <div className="relative">
+                <div className="bg-slate-50">
+                    <HadLine />
+                    <Navbar />
+                    <div className="container mx-auto flex flex-col md:flex-row gap-5 lg:gap-[80px] p-5">
+                        <div className="scrollbar w-full md:w-[30%] max-h-[500px] overflow-y-auto">
+                            <div className="flex justify-between items-center mt-5 hidden md:block md:flex md:justify-between lg:flex" onClick={toggleItems}>
+                                <h1 className="text-[25px] text-black font-bold capitalize ">New Arrival</h1>
+                                {isOpen ? <FaMinus /> : <FaPlus />}
+                            </div>
+                            {isOpen && (
+                                <div className="ml-5 hidden md:block">
+                                    {items.map((item) => (
+                                        <div key={item} className="text-[16px] text-black font-bold opacity-80 capitalize">
+                                            <div onClick={() => { handleItemClick(item); toggleSubItems(item); }} className="flex justify-between cursor-pointer">
+                                                <p>{item}</p>
+                                                {subItemOpen === item ? <FaMinus /> : <FaPlus />}
                                             </div>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
-                        )}
-                    </div>
-
-                    <div className="w-full md:w-[70%] max-h-[500px] overflow-y-auto">
-                        <div className="input-field top-16  md:static   fixed z-50">
-                            <div className="relative bg-slate-100 w-full flex">
-                                <input
-                                    type="text"
-                                    className="py-1 px-4 text-blue-600 border border-gray-300 focus:outline-none focus:border-blue-500 md:w-[600px] lg:w-[800px] w-[300px]"
-                                    placeholder="Search by product"
-                                />
-                                <div className="relative border border-gray-400 h-10 w-10 text-center ml-1">
-                                    <FaSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
+                                            {subItemOpen === item && (
+                                                <div className="sub-items ml-5">
+                                                    {subItems.map((subItem) => (
+                                                        <p key={subItem} className="text-[15px] text-black opacity-60 capitalize cursor-pointer">
+                                                            {subItem}
+                                                        </p>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
                                 </div>
-                            </div>
+                            )}
                         </div>
 
-                        {selectedItem && (
-                            <div className="item-details flex justify-center items-center mt-4">
-                                <h2>Details for: {selectedItem}</h2>
-                            </div>
-                        )}
-
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-4 lg:mt-10">
-                            {ImgItems.map((item, i) => (
-                                <div key={i} className="item text-center relative">
-                                    <Link to="/Price" className="">
-                                        <img src={item.Image} alt="" className="w-[180px] h-[180px] mx-auto" />
-                                    </Link>
-                                    <p className="absolute bg-red-600 text-white p-[1px] w-[70px] top-0 right-[36px]">Sale</p>
-                                    <h2 className="mt-1">{item.Name}</h2>
-                                    <button className="bg-slate-700 text-white p-0 w-[100px] mx-auto mt-1 hover:bg-yellow-400 hover:text-black transition-all">{item.Save}</button>
-                                    <p className="mx-auto mt-1">{item.Price}</p>
-                                    <div className="cart mt-1">
-
-
-                                        <button onClick={() => setAdCart(!adCart)} className="icon flex items-center justify-center gap-4 bg-black p-1 w-full hover:bg-green-500 hover:text-white transition-all">
-                                            <FaCartPlus className="text-white " />
-                                            <h1 className="capitalize text-[15px] text-white">Buy Now</h1>
-                                        </button>
-
+                        <div className="w-full md:w-[70%] max-h-[500px] overflow-y-auto">
+                            <div className="input-field top-16  md:static   fixed z-50">
+                                <div className="relative bg-slate-100 w-full flex">
+                                    <input
+                                        type="text"
+                                        className="py-1 px-4 text-blue-600 border border-gray-300 focus:outline-none focus:border-blue-500 md:w-[600px] lg:w-[800px] w-[300px]"
+                                        placeholder="Search by product"
+                                    />
+                                    <div className="relative border border-gray-400 h-10 w-10 text-center ml-1">
+                                        <FaSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
                                     </div>
                                 </div>
-
-                            ))}
-                         {
-                            adCart&&(
-                            <div onClick={() => setAdCart(!adCart)} className="div z-[999] absolute top-[60px] ">
-                                <PriceDetels    />
                             </div>
-                          )
-                         }
+
+                            {selectedItem && (
+                                <div className="item-details flex justify-center items-center mt-4">
+                                    <h2>Details for: {selectedItem}</h2>
+                                </div>
+                            )}
+
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-4 lg:mt-10">
+                                {ImgItems.map((item, i) => (
+                                    <div key={i} className="item text-center relative">
+                                        <Link to="/Price" className="">
+                                            <img src={item.Image} alt="" className="w-[180px] h-[180px] mx-auto" />
+                                        </Link>
+                                        <p className="absolute bg-red-600 text-white p-[1px] w-[70px] top-0 right-[36px]">Sale</p>
+                                        <h2 className="mt-1">{item.Name}</h2>
+                                        <button className="bg-slate-700 text-white p-0 w-[100px] mx-auto mt-1 hover:bg-yellow-400 hover:text-black transition-all">{item.Save}</button>
+                                        <p className="mx-auto mt-1">{item.Price}</p>
+                                        <div className="cart mt-1">
+
+
+                                            <button onClick={() => setAdCart(!adCart)} className="icon flex items-center justify-center gap-4 bg-black p-1 w-full hover:bg-green-500 hover:text-white transition-all">
+                                                <FaCartPlus className="text-white " />
+                                                <h1 className="capitalize text-[15px] text-white">Buy Now</h1>
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                ))}
+                                {
+                                    adCart && (
+                                        <div onClick={() => setAdCart(!adCart)} className="div z-[999] absolute top-[60px] ">
+                                            <PriceDetels />
+                                        </div>
+                                    )
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
+                 {/* Foote---start---- */}
+                 <Footer/>
+                 {/* Foote---End---- */}
+
+                {/* Click---from--button---start */}
+                <div className="absolute top-2 right-8 z-50 hidden md:block">
+                    <ClickFromButton />
+                </div>
+                {/* Click---from--button---End */}
+
+                {/* add---cart---start */}
+                <AdCart />
+                {/* add---cart---end */}
+
             </div>
-
-
-            {/* Click---from--button---start */}
-            <div className="absolute top-2 right-8 z-50 hidden md:block">
-                <ClickFromButton />
-            </div>
-            {/* Click---from--button---End */}
-
-            {/* add---cart---start */}
-            <AdCart />
-            {/* add---cart---end */}
-
         </div>
     );
 };
