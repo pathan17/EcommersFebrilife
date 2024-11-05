@@ -103,13 +103,13 @@ const ClickFromButton = () => {
             <div className="div ml-[200px] mt-[500px]">
                 <button
                     onClick={() => setIsFormVisible(!isFormVisible)}
-                    className="flex justify-center items-center bg-blue-500 text-white rounded-full h-[60px] w-[60px] mb-4 transition"
+                    className="flex justify-center items-center bg-blue-500 text-white rounded-full h-[50px] w-[50px] mb-4 transition"
                 >
                     {
                         isFormVisible ?
-                            <FaAngleDown className="text-[30px]" />
+                            <FaAngleDown className="text-[22px]" />
                             :
-                            <FaBook className="text-[30px]" />
+                            <FaBook className="text-[22px]" />
                     }
 
                 </button>
