@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           <div className="btn w-full lg:w-[40%]">
             <span className="text-white flex gap-1">
-              <FaPhoneAlt className="text-[13px] text-yellow-700" />
+              <FaPhoneAlt className="text-[13px] text-yellow-300 mt-1.5" />
               FOR ANY HELP YOU MAY CALL US AT
             </span>
             <span className="text-white ml-5">8809677666888</span>
