@@ -60,6 +60,7 @@ const ScrollPages = () => {
         <div>
             <div className="relative">
                 <div className="bg-slate-50">
+
                     <HadLine />
                     <Navbar />
                     <div className="container mx-auto flex flex-col md:flex-row gap-5 lg:gap-[80px] p-5">
@@ -143,20 +144,29 @@ const ScrollPages = () => {
                             </div>
                         </div>
                     </div>
+                   {/* Foote---start---- */}
+                    <div className="div mt-[80px]">
+                        <Footer />
+                    </div>
+                     {/* Foote---End---- */}
                 </div>
-                 {/* Foote---start---- */}
-                 <Footer/>
-                 {/* Foote---End---- */}
 
                 {/* Click---from--button---start */}
-                <div className="absolute top-2 right-8 z-50 hidden md:block">
+                <div className=" fixed top-[40px] right-[20px] z-50 hidden md:block">
                     <ClickFromButton />
                 </div>
                 {/* Click---from--button---End */}
 
                 {/* add---cart---start */}
-                <AdCart />
+                     <div className="  top-0 fixed  right-0 z-50 h-screen">
+                        <AdCart/>
+                     </div>
                 {/* add---cart---end */}
+                
+
+               
+
+
 
             </div>
         </div>

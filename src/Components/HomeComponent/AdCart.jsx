@@ -13,9 +13,9 @@ const AdCart = () => {
 
                     cart ?
                         <div className=" ml-[-50px] opacity-[100%]">
-                            <div className=" absolute  bg-gray-400 h-full w-[300px] z-[999] right-0 top-0">
-                                <div className="div bg-black h-[45px] w-full top-0 flex gap-x-[100px] text-white z-[999]">
-                                    <div onClick={() => setCart(!cart)} className="cros text-[30px] text-red-600 text-center mt-2 font-bold"><IoMdClose /></div>
+                            <div className=" absolute  bg-gray-400 h-full w-[350px]  z-[999] right-0 top-0 transition-all">
+                                <div className="div bg-black h-[45px] px-3 w-full top-0 flex gap-x-[100px] text-white z-[999] cursor-pointer ">
+                                    <div onClick={() => setCart(!cart)} className="cros text-[30px] text-red-600 text-center mt-2 font-bold transition-all"><IoMdClose /></div>
                                     <div className="text">
                                         <h1 className="text-center mt-3 uppercase">CART</h1>
                                     </div>
@@ -37,8 +37,8 @@ const AdCart = () => {
                             </div>
                         </div>
                         :
-                        <div onClick={() => setCart(!cart)} className="icon bg-blue-600 w-[50px] h-[50px] rounded-md absolute ml-[200px] mt-15 right-0 top-[40%] cursor-pointer">
-                            <span className=" absolute  text-[15px] text-white content[''] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] "><FaShoppingCart /></span>
+                        <div onClick={() => setCart(!cart)} className="icon bg-blue-600 w-[40px] h-[40px] rounded-md absolute ml-[200px] mt-15 right-0 top-[40%] cursor-pointer transition-all">
+                            <span className=" absolute  text-[12px] text-white content[''] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all "><FaShoppingCart /></span>
                             <h1 className=" mt-[55px] bg-blue-600 text-center rounded-md h-6 w-6 text-white ml-2">0</h1>
                         </div>
                 }

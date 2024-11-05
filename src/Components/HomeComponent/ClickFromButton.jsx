@@ -41,8 +41,8 @@ const ClickFromButton = () => {
             {
                 isFormVisible && (
                     <div className="div z-[999]"> 
-                        <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md w-[100%]">
-                            <div onClick={() => setIsFormVisible(!isFormVisible)} className="close ml-[230px] mt-[-15px] text-blue-500"><FaAngleDown className="text-[30px]" /></div>
+                        <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md w-[100%] transition-all">
+                            <div onClick={() => setIsFormVisible(!isFormVisible)} className="close ml-[230px] mt-[-15px] text-blue-500 cursor-pointer transition-all"><FaAngleDown className="text-[30px]" /></div>
                             <div className="text-center">
                                 <h1 className="text-2xl font-bold">FabriLife</h1>
                                 <p>Customer Support Desk</p>
@@ -103,7 +103,7 @@ const ClickFromButton = () => {
             <div className="div ml-[200px] mt-[500px]">
                 <button
                     onClick={() => setIsFormVisible(!isFormVisible)}
-                    className="flex justify-center items-center bg-blue-500 text-white rounded-full h-[50px] w-[50px] mb-4 transition"
+                    className="flex justify-center items-center bg-blue-500 text-white rounded-full h-[50px] w-[50px] mb-4 transition-all "
                 >
                     {
                         isFormVisible ?
