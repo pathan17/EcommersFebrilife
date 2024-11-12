@@ -10,8 +10,8 @@ const DesignerEdition = () => {
 
     return (
         <div>
-            <div className="container p-1 px-3  lg:px-0  mx-auto  lg:max-w-[1120px]">
-                <div className="flex flex-wrap gap-[18px]   mt-2 justify-center">
+            <div className="container p-1 px-3 lg:p-0  lg:px-0  mx-auto  lg:max-w-[1120px]">
+                <div className="flex flex-wrap  gap-[18px] lg:gap-[19px]   mt-2 justify-center p-4  lg:p-0">
                     {
                         designerImg.map((item, i) => (
                             <div
@@ -23,7 +23,7 @@ const DesignerEdition = () => {
                               <div className="img mx-auto relative">
                                     <img src={item.IMAGE} alt="img" className=" w-full" />
                                     <div className=" absolute price bottom-1">
-                                        <Link to="/newPage" className="text-white text-[20px] font-semibold lg:ml-[100px]   ml-[115px] rounded-md uppercase hover:text-red-500 transition-all">Design Edition</Link>
+                                        <Link to="/newPage" className="text-white text-[20px] font-semibold lg:ml-[100px]   ml-[90px] rounded-md uppercase hover:text-red-500 transition-all">Design Edition</Link>
                                     </div>
                                 </div>
                               </Link>

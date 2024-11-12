@@ -136,7 +136,7 @@ const ScrollPages = () => {
                                 ))}
                                 {
                                     adCart && (
-                                        <div onClick={() => setAdCart(!adCart)} className="div z-[999] absolute top-[60px] ">
+                                        <div onClick={() => setAdCart(adCart)} className="div z-[999] absolute top-[60px] ">
                                             <PriceDetels />
                                         </div>
                                     )

@@ -24,10 +24,10 @@ const Antibacktriya = () => {
     <div>
       <div className="container p-1 px-3 md:px-[40px] lg:px-[5px] mx-auto mt-[20px] lg:max-w-[1120px]">
         <Link to="/newPage">
-          <div className="flex flex-col lg:flex-row gap-5">
+          <div className="flex flex-col lg:flex-row gap-5 p-4 lg:p-0">
 
             {FullSleev.map((item, i) => (
-              <div key={i} className="item w-full lg:w-[39%]">
+              <div key={i} className="item w-full lg:w-[40%]">
                 <div className="img">
                   <img
                     src={item.IMG}
@@ -50,7 +50,7 @@ const Antibacktriya = () => {
                   </Link>
                   <div className="absolute inset-0 h-[158px] w-full bg-black opacity-0 hover:opacity-40 transition-opacity duration-300"></div>
                   <div className="absolute price bottom-[-6px]">
-                    <h1 className="text-black bg-white px-[30px] py-[2px] lg:ml-[30px] ml-[45px] rounded-md shadow-lg">
+                    <h1 className="text-black bg-white px-[30px] py-[2px] lg:ml-[30px] ml-[35px] rounded-md shadow-lg">
                       ৳1000
                     </h1>
                   </div>

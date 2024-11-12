@@ -29,7 +29,7 @@ const DesignerEdition = () => {
     <div>
       <div className="container px-3  mx-auto lg:max-w-[1120px]">
         <div className="">
-          <div className="items flex flex-wrap gap-[20px]  mt-[40px]  justify-center  ">
+          <div className="items flex flex-wrap gap-[20px]  mt-[40px]  justify-center p-4 lg:p-0">
             {
               deginerImg.map((item, i) => (
                 <Link to="/Price" key={i} className="item bg-white mt-[50px]  rounded-md w-[15.1%]">

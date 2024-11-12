@@ -60,7 +60,7 @@ const Navbar = () => {
                 <h2 className=" justify-center items-center gap-2 hidden  lg:flex lg:mt-7 text-black font-bold text-[18px] mt-0 hover:text-blue-600 z-50 ">
                   Shop <IoIosArrowDown className=" lg:mt-1 " />
                 </h2>
-                <div className="menu bg-white  p-6 absolute hidden group-hover:block w-[800px] z-[999] ">
+                <div className="menu bg-white  p-6 absolute hidden group-hover:block w-[800px]  ">
                   <div className="div flex flex-row h-[310px] gap-15 ] ">
                     <ul className="flex flex-col">
                       <li className="text-black font-bold z-[999]  text-lg">
@@ -70,22 +70,22 @@ const Navbar = () => {
                       </li>
                       <li className="text-black ">
                         <Link to="/newPage">
-                          T-shart
+                          T-shirt
                         </Link>
                       </li>
                       <li className="text-black ">
                         <Link to="/newPage">
-                          T-sart(Raglan)
+                          T-shirt(Raglan)
                         </Link>
                       </li>
                       <li className="text-black ">
                         <Link to="/newPage">
-                          T-sart(Cut & Stitch)
+                          T-shirt(Cut & Stitch)
                         </Link>
                       </li>
                       <li className="text-black">
                         <Link to="/newPage">
-                          T-sart(sports&Edition)
+                          T-shirt(sports&Edition)
                         </Link>
                       </li>
                       <li className="text-black">
@@ -349,7 +349,7 @@ const Navbar = () => {
               {/* FaAngleDown click stape */}
               {
                 loginVisible ?
-                  <div className="LoginSaidbar absolute p-2 bg-gray-400 ml-[-145px] mt-[48px]  z-50">
+                  <div className="LoginSaidbar absolute p-2 bg-gray-400 ml-[-145px] mt-[48px] lg:z-0  z-50">
                     <div className="   w-[50%] h-[50%] z-[999] place-content-center ">
                       <div className="login flex gap-5 mb-2">
                         <div className="text">

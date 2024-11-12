@@ -35,7 +35,7 @@ function App() {
       {/* febrilifeHedline End */}
 
       {/* Navbar start */}
-       <div className="  lg:top-0 lg:left-0 lg:w-full lg:sticky z-[999] ">
+       <div className="  lg:top-0 lg:left-0 lg:w-full lg:sticky z-[999]  top-0 left-0 w-full sticky  ">
        <Navbar />
        </div>
         

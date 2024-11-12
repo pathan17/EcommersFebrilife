@@ -14,7 +14,6 @@ import MensMetro from "../Components/Mens Premium/MensMetro";
 const PricePages = (props) => {
     return (
         <div>
-          
             <HadLine/>
             <Navbar/>
             <MensMetro />

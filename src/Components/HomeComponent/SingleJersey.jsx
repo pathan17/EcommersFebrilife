@@ -3,7 +3,7 @@ import DesignerEdition from "./DesignerEdition";
 
 const SingleJersey = (props) => {
     return (
-        <div className=" mt-[35px]">
+        <div className=" mt-[25px]">
             <DesignerEdition></DesignerEdition>
         </div>
     );

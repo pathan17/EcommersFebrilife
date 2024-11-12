@@ -7,6 +7,8 @@ import ScrollPages from "./Pages/ScrollPages";
 import LoginPage from "./Pages/LoginPage";
 import PricePages from "./Pages/PricePages";
 import TrackOrder from "./Components/HomeComponent/TrackOrder";
+import Registration from "./Pages/Registration";
+
 // import PriceDetels from "./Components/Mens Premium/PriceDetels";
 
 
@@ -18,14 +20,16 @@ function App() {
   return (
     <>
       <Routes>
-         
-        <Route path="/Order" element={ <TrackOrder/> } />  
-        <Route path="/Price" element={ <PricePages/> } /> 
-        <Route path="/path" element={ <LoginPage/> } />
-        <Route path="/" element={ <Home/> } />
-        <Route path="/newPage" element={ <ScrollPages/> } /> 
-         
-        
+
+        <Route path="/" element={<Home />} />
+        <Route path="/Price" element={<PricePages />} />
+        <Route path="/newPage" element={<ScrollPages />} />
+        <Route path="/path" element={<LoginPage />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/Order" element={<TrackOrder />} />
+
+
+
       </Routes>
     </>
   );
