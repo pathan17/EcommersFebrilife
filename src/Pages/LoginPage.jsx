@@ -22,7 +22,7 @@ const LoginPage = () => {
        <div className="  lg:top-0 lg:left-0 lg:w-full lg:sticky z-[999] ">
        <Navbar />
        </div>
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r bg-white to-gray-900">
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r bg-white to-gray-900 px-[20px]">
         <div className="p-8 w-full max-w-lg bg-gray-700 rounded-lg shadow-lg shadow-gray-800">
           <h2 className="text-2xl font-bold mb-6 text-center text-white font-sans capitalize">
             Sign In to Your Account
