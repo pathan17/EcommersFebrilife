@@ -9,17 +9,14 @@ import LoginAllPages from "../../Pages/LoginAllPages";
 
 const HadLine = () => {
   const [isLoginDropdownOpen, setIsLoginDropdownOpen] = useState(false);
-  const [isBangladeshDropdownOpen, setIsBangladeshDropdownOpen] = useState(false);
+
 
   // Toggle the login dropdown visibility
   const toggleLoginDropdown = () => {
     setIsLoginDropdownOpen(!isLoginDropdownOpen);
   };
 
-  // Toggle the Bangladesh dropdown visibility
-  const toggleBangladeshDropdown = () => {
-    setIsBangladeshDropdownOpen(!isBangladeshDropdownOpen);
-  };
+
 
   return (
     <div>
@@ -47,22 +44,11 @@ const HadLine = () => {
                 {/* Bangladesh Dropdown Button */}
                 <p
                   className="bg-black bg-opacity-15 hover:bg-green-700 text-white h-8 w-[200px] flex items-center justify-center gap-1 rounded-sm cursor-pointer transition-all"
-                  onClick={toggleBangladeshDropdown}
-                  aria-haspopup="true"
-                  aria-expanded={isBangladeshDropdownOpen ? "true" : "false"}
+
                 >
                   <span className="text-lg">Bangladesh</span>
                   <IoIosArrowDown className="text-lg" />
                 </p>
-
-                {/* Bangladesh Dropdown Menu */}
-                {isBangladeshDropdownOpen && (
-                  <div className="absolute bg-white w-[200px] mt-2 rounded-lg shadow-lg">
-                    <p className="p-2 text-black">Option 1</p>
-                    <p className="p-2 text-black">Option 2</p>
-                    <p className="p-2 text-black">Option 3</p>
-                  </div>
-                )}
 
                 {/* Help and Login Button Group */}
                 <div className="relative group">
@@ -93,7 +79,7 @@ const HadLine = () => {
                           role="menu"
                           aria-hidden={!isLoginDropdownOpen}
                         >
-                          <LoginAllPages/>
+                          <LoginAllPages />
                         </div>
                       )}
                     </div>
